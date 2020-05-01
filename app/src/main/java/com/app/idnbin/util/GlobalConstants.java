@@ -10,6 +10,7 @@ import java.util.Arrays;
 
 public class GlobalConstants {
 
+    public Integer some = 0;
     public String something = "something";
     public static ArrayList<CustomizeSymbol> customizeArrayList= new ArrayList<CustomizeSymbol>(Arrays.asList(new CustomizeSymbol("Portfolio", R.drawable.ic_portfolio_selector, 1),new CustomizeSymbol("Market Analysis",R.drawable.ic_marketanalysis_selector,1), new CustomizeSymbol( "Price Movements",R.drawable.ic_alert_selector,1),new CustomizeSymbol( "Video Tutorial",R.drawable.ic_tutorial_selector,1),new CustomizeSymbol( "Chats",R.drawable.ic_chat_selector,1)));
     public static final DatabaseReference UsersInstance = FirebaseDatabase.getInstance().getReference("Android/UserDetails");
