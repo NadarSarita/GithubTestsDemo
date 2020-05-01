@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.ProfileFragment"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/RlHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/IvUserProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_user_profile" />
+
+        <TextView
+            android:id="@+id/TvUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/IvUserProfile"
+            android:drawableEnd="@drawable/ic_nav"
+            android:gravity="center_vertical"
+            android:text="Demo User"
+            android:textColor="@color/color_text_white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RlHead">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CvBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="?attr/colorWhiteTransparent"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_balance"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="BALANCE"
+                        android:textColor="@color/color_text_white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="$0.00"
+                        android:textColor="@color/color_text_white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CvDeposit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CvBalance"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                app:cardBackgroundColor="?attr/colorWhiteTransparent"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_deposit"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Deposit"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@color/color_text_white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CvWithdraw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CvDeposit"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="?attr/colorWhiteTransparent"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_withdraw"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Withdraw"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@color/color_text_white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CvProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CvWithdraw"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="?attr/colorWhiteTransparent"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_user_profile"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="PROFILE"
+                        android:textColor="@color/color_text_white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CvHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CvProfile"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                app:cardBackgroundColor="?attr/colorWhiteTransparent"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/TvHistory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_history"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="History"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@color/color_text_white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/TvOperations"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Operations"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:layout_marginStart="30dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/TvHistory"
+                        android:textColor="@color/color_text_grey"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/TvTradingHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Trading"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:layout_marginStart="30dp"
+                        android:paddingTop="8dp"
+                        android:layout_below="@+id/TvOperations"
+                        android:textColor="@color/color_text_grey"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CvPrivacySetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CvHistory"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="?attr/colorWhiteTransparent"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_privacysetting"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="PRIVACY SETTINGS"
+                        android:textColor="@color/color_text_white"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CvPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CvPrivacySetting"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="?attr/colorWhiteTransparent"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_payment"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="PAYMENT"
+                        android:textColor="@color/color_text_white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CvNotificationSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CvPayment"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="?attr/colorWhiteTransparent"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_notification"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="NOTIFICATION SETTINGS"
+                        android:textColor="@color/color_text_white"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CvSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CvNotificationSetting"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="?attr/colorWhiteTransparent"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/TvSettings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_settings"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Settings"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@color/color_text_white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/TvSettingTrade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Trading"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:layout_marginStart="30dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/TvSettings"
+                        android:textColor="@color/color_text_grey"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/TvSecurity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Security"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:paddingBottom="8dp"
+                        android:layout_marginStart="30dp"
+                        android:paddingTop="8dp"
+                        android:layout_below="@+id/TvSettingTrade"
+                        android:textColor="@color/color_text_grey"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/TvCards"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Cards"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:paddingBottom="8dp"
+                        android:layout_marginStart="30dp"
+                        android:paddingTop="8dp"
+                        android:layout_below="@+id/TvSecurity"
+                        android:textColor="@color/color_text_grey"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/TvNotification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Notifications"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:layout_marginStart="30dp"
+                        android:paddingTop="8dp"
+                        android:layout_below="@+id/TvCards"
+                        android:textColor="@color/color_text_grey"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CvHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CvSetting"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                app:cardBackgroundColor="?attr/colorWhiteTransparent"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_help"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Support"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@color/color_text_white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CvRateus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CvHelp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                app:cardBackgroundColor="?attr/colorWhiteTransparent"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_rateus"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Rate Us"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@color/color_text_white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CVLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CvRateus"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                app:cardBackgroundColor="?attr/colorWhiteTransparent"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_logout"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Logout"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@color/color_text_white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/RLTermsConditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CVLogout"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Terms &amp; Conditions"
+                    android:textColor="@color/color_text_grey"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

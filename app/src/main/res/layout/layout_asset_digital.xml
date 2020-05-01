@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+
+        <ImageView
+            android:id="@+id/Iv_Symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_digital"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/Tv_Symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AUD/CAD"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:padding="5dp"
+            android:layout_marginEnd="10dp"
+            android:drawablePadding="5dp"
+            android:gravity="center_horizontal"
+            android:layout_toRightOf="@+id/Iv_Symbol"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="106.3547"
+            android:textSize="10sp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/colorLightGray"
+            android:layout_below="@id/Tv_Symbol"
+            android:layout_toEndOf="@+id/Iv_Symbol"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/Tv_Symbol">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-0.03%"
+                android:textColor="@color/colorSell"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="87%"
+                android:textColor="@color/colorBuy"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:padding="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_bell"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_info"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_star"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

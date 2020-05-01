@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhiteTrans">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/TvValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.8921030"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TvAudCad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvValue"
+            android:text="AUD/CAD"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/TvValue"
+            app:layout_constraintTop_toBottomOf="@+id/TvValue" />
+
+        <TextView
+            android:id="@+id/TvAudCadValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvValue"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/TvAudCad"
+            android:text="+0.004%"
+            android:textColor="@color/colorSell"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/TvAudCad"
+            app:layout_constraintTop_toBottomOf="@+id/TvValue" />
+
+        <ImageView
+            android:id="@+id/Tvbell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/Tvstar"
+            android:padding="8dp"
+            android:src="@drawable/ic_bell"
+            app:layout_constraintBottom_toTopOf="@+id/View"
+            app:layout_constraintEnd_toStartOf="@+id/Tvstar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/Tvstar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_star"
+            app:layout_constraintBottom_toTopOf="@+id/View"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/View"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/TvAudCadValue"
+            android:layout_marginTop="8dp"
+            android:background="@color/color_text_grey"
+            app:layout_constraintTop_toBottomOf="@+id/TvAudCad" />
+
+        <TextView
+            android:id="@+id/TvtraderSentiment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/View"
+            android:layout_marginTop="8dp"
+            android:text="TRADERS' SENTIMENT"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/View" />
+
+        <SeekBar
+            android:id="@+id/SbTrader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TvtraderSentiment"
+            android:thumb="@drawable/seek_thumb"
+            android:paddingStart="0dp"
+            android:progressDrawable="@drawable/progress_bar"
+            android:paddingEnd="0dp"
+            android:maxHeight="3dip"
+            android:progress="2"
+            app:layout_constraintTop_toBottomOf="@+id/TvtraderSentiment"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <TextView
+            android:id="@+id/TvPut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SbTrader"
+            android:text="Put 31%"
+            android:textAllCaps="true"
+            android:textColor="@color/colorSell"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/SbTrader"
+            app:layout_constraintTop_toBottomOf="@+id/SbTrader" />
+
+        <TextView
+            android:id="@+id/TvCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SbTrader"
+            android:layout_alignParentEnd="true"
+            android:text="Call 31%"
+            android:textAllCaps="true"
+            android:textColor="@color/colorGradGreen"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/SbTrader"
+            app:layout_constraintTop_toBottomOf="@+id/SbTrader" />
+
+        <TextView
+            android:id="@+id/TvLiveStatistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvCall"
+            android:layout_marginTop="16dp"
+            android:text="LIVE STATISTICS"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TvPut" />
+
+        <TextView
+            android:id="@+id/TvMinutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvLiveStatistics"
+            android:layout_marginTop="8dp"
+            android:text="5 MINUTES"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TvLiveStatistics" />
+
+        <TextView
+            android:id="@+id/TvLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvLiveStatistics"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="80dp"
+            android:layout_toEndOf="@+id/TvMinutes"
+            android:text="LOW"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/TvMinutes"
+            app:layout_constraintEnd_toStartOf="@+id/TvHigh" />
+
+        <TextView
+            android:id="@+id/TvHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvLiveStatistics"
+            android:layout_alignParentEnd="true"
+            android:text="HIGH"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/TvLow"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/TvMinutesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvMinutes"
+            android:text="-0.007%"
+            android:textColor="@color/colorSell"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/TvMinutes"
+            app:layout_constraintTop_toBottomOf="@+id/TvMinutes" />
+
+        <SeekBar
+            android:id="@+id/SbMinutes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvLow"
+            android:layout_toEndOf="@id/TvMinutesValue"
+            android:thumb="@drawable/seek_thumb"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:progressDrawable="@drawable/progress_bar_back"
+            android:maxHeight="3dip"
+            android:progress="2"
+            app:layout_constraintEnd_toEndOf="@+id/TvHigh"
+            app:layout_constraintStart_toStartOf="@id/TvLow"
+            app:layout_constraintTop_toBottomOf="@+id/TvLow" />
+
+        <TextView
+            android:id="@+id/TvMnValue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SbMinutes"
+            android:layout_toEndOf="@id/TvMinutesValue"
+            android:text="0.8920632"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/SbMinutes"
+            app:layout_constraintTop_toBottomOf="@+id/SbMinutes" />
+
+        <TextView
+            android:id="@+id/TvMnValue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SbMinutes"
+            android:layout_toEndOf="@id/TvMinutesValue"
+            android:text="0.89216408"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/SbMinutes"
+            app:layout_constraintTop_toBottomOf="@+id/SbMinutes" />
+
+        <TextView
+            android:id="@+id/TvHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvMnValue1"
+            android:layout_marginTop="16dp"
+            android:text="1 HOUR"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TvMinutesValue" />
+
+        <TextView
+            android:id="@+id/TvHourValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvHour"
+            android:text="-0.037%"
+            android:textColor="@color/colorSell"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TvHour" />
+
+        <SeekBar
+            android:id="@+id/SbHour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvHour"
+            android:layout_toEndOf="@id/TvHourValue"
+            android:thumb="@drawable/seek_thumb"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:maxHeight="3dip"
+            android:progress="2"
+            android:progressDrawable="@drawable/progress_bar_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/SbMinutes"
+            app:layout_constraintTop_toTopOf="@+id/TvHourValue" />
+
+        <TextView
+            android:id="@+id/TvHrValue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SbHour"
+            android:layout_marginStart="1dp"
+            android:layout_toEndOf="@id/TvHourValue"
+            android:text="0.892063002"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/SbHour"
+            app:layout_constraintTop_toBottomOf="@+id/SbHour" />
+
+        <TextView
+            android:id="@+id/TvHrValue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SbHour"
+            android:layout_marginStart="1dp"
+            android:layout_toEndOf="@id/TvHourValue"
+            android:text="0.89216408"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/SbHour"
+            app:layout_constraintTop_toBottomOf="@+id/SbHour" />
+
+
+        <TextView
+            android:id="@+id/TvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvHrValue1"
+            android:layout_marginTop="16dp"
+            android:text="1 DAY"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TvHourValue" />
+
+        <TextView
+            android:id="@+id/TvDayValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvDay"
+            android:text="+0.004%"
+            android:textColor="@color/colorGradGreen"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TvDay" />
+
+        <SeekBar
+            android:id="@+id/SbDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvDay"
+            android:layout_toEndOf="@id/TvHourValue"
+            android:thumb="@drawable/seek_thumb"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:maxHeight="3dip"
+            android:progress="2"
+            android:progressDrawable="@drawable/progress_bar_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/SbHour"
+            app:layout_constraintTop_toTopOf="@+id/TvDayValue" />
+
+        <TextView
+            android:id="@+id/TvDValue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SbDay"
+            android:text="0.89206300"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/SbDay"
+            app:layout_constraintTop_toBottomOf="@+id/SbDay" />
+
+        <TextView
+            android:id="@+id/TvDValue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SbDay"
+            android:text="0.89206300"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/SbDay"
+            app:layout_constraintTop_toBottomOf="@+id/SbDay" />
+
+        <TextView
+            android:id="@+id/TvWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvDValue1"
+            android:layout_marginTop="16dp"
+            android:text="1 WEEK"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TvDayValue" />
+
+        <TextView
+            android:id="@+id/TvWeekValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvWeek"
+            android:text="+0.004%"
+            android:textColor="@color/colorGradGreen"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TvWeek" />
+
+        <SeekBar
+            android:id="@+id/SbWeek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvWeek"
+            android:layout_toEndOf="@id/TvWeekValue"
+            android:thumb="@drawable/seek_thumb"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:maxHeight="3dip"
+            android:progress="2"
+            android:progressDrawable="@drawable/progress_bar_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/SbDay"
+            app:layout_constraintTop_toTopOf="@+id/TvWeekValue" />
+
+        <TextView
+            android:id="@+id/TvWkValue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SbWeek"
+            android:layout_toEndOf="@id/TvWeekValue"
+            android:text="0.89206300"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/SbWeek"
+            app:layout_constraintTop_toBottomOf="@+id/SbWeek" />
+
+        <TextView
+            android:id="@+id/TvWkValue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SbWeek"
+            android:layout_toEndOf="@id/TvWeekValue"
+            android:text="0.89206300"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SbWeek" />
+
+        <TextView
+            android:id="@+id/TvMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvWkValue1"
+            android:layout_marginTop="16dp"
+            android:text="1 MONTH"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TvWeekValue" />
+
+        <TextView
+            android:id="@+id/TvMonthValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvMonth"
+            android:text="+0.004%"
+            android:textColor="@color/colorGradGreen"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TvMonth" />
+
+        <SeekBar
+            android:id="@+id/SbMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvMonth"
+            android:layout_toEndOf="@id/TvMonthValue"
+            android:thumb="@drawable/seek_thumb"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:maxHeight="3dip"
+            android:progressDrawable="@drawable/progress_bar_back"
+            android:progress="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/SbWeek"
+            app:layout_constraintTop_toTopOf="@+id/TvMonthValue" />
+
+        <TextView
+            android:id="@+id/TvMthValue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SbMonth"
+            android:layout_toEndOf="@id/TvMonthValue"
+            android:text="0.89206302"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/SbMonth"
+            app:layout_constraintTop_toBottomOf="@+id/SbMonth" />
+
+        <TextView
+            android:id="@+id/TvMthValue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SbMonth"
+            android:layout_toEndOf="@id/TvMonthValue"
+            android:text="0.89206302"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/SbMonth"
+            app:layout_constraintTop_toBottomOf="@+id/SbMonth" />
+
+        <TextView
+            android:id="@+id/TvMorePeriods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/ic_downward_arrow"
+            android:gravity="center_vertical"
+            android:text="MORE PERIODS"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintTop_toBottomOf="@+id/TvDValue1" />
+
+        <View
+            android:id="@+id/View2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/color_text_grey"
+            app:layout_constraintTop_toBottomOf="@+id/TvMthValue1"
+            app:layout_goneMarginTop="55dp" />
+
+        <TextView
+            android:id="@+id/TvBase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvMorePeriods"
+            android:layout_marginTop="24dp"
+            android:text="BASE"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TvDescription" />
+
+        <TextView
+            android:id="@+id/TvAud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvMorePeriods"
+            android:layout_alignParentEnd="true"
+            android:text="AUD"
+            android:textColor="@color/color_text_white"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/TvBase"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/TvSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvBase"
+            android:text="BASE"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TvBase" />
+
+        <TextView
+            android:id="@+id/TvCad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvAud"
+            android:layout_alignParentEnd="true"
+            android:text="CAD"
+            android:textColor="@color/color_text_white"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/TvSecond"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvSecond"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:drawableStart="@drawable/external_link"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:text="Full Information"
+            android:textColor="@color/color_text_white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TvSecond" />
+
+        <TextView
+            android:id="@+id/TvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Description"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintTop_toBottomOf="@+id/View2"
+            tools:layout_editor_absoluteX="95dp" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="TvWeekValue,TvMthValue1,TvMonthValue,TvMthValue2,TvWeek,SbMonth,TvWkValue2,SbWeek,TvWkValue1,TvMonth" />
+
+
+        <!--
+            <RelativeLayout
+                android:id="@+id/RlFirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:focusable="true">
+
+              
+
+            </RelativeLayout>
+    -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

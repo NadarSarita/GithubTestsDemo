@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.Deposit.BitCoinActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar" />
+
+    <TextView
+        android:id="@+id/TV_amount_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENTER AMOUNT"
+        android:layout_margin="10dp"
+        android:layout_below="@id/appbar"
+        android:textColor="@color/color_text_grey"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/RlAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/TV_amount_header"
+        android:background="@color/color_text_white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ETAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="500"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:background="@color/color_text_white"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorBackground"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/SpAmount_bitcoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:popupBackground="@color/colorBackground"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RlAmount1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RlAmount"
+        android:layout_margin="10dp"
+        android:padding="4dp"
+        android:background="@color/color_text_white">
+
+        <TextView
+            android:id="@+id/TvAmount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.029304"
+            android:textColor="@color/colorBackground"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/btcText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="BTC"
+            android:textColor="@color/colorBackground"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RlAmount1">
+
+        <RelativeLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/TvAmt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="250 P"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_rounded_transparent"
+                android:textColor="@color/color_text_white"/>
+
+            <TextView
+                android:id="@+id/TvAmt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500 P"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_rounded_transparent"
+                android:layout_toEndOf="@+id/TvAmt1"
+                android:textColor="@color/color_text_white"/>
+
+            <TextView
+                android:id="@+id/TvAmt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500 P"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_rounded_transparent"
+                android:layout_toEndOf="@+id/TvAmt2"
+                android:textColor="@color/color_text_white"/>
+
+            <TextView
+                android:id="@+id/TvAmt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500 P"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_rounded_transparent"
+                android:layout_toEndOf="@+id/TvAmt3"
+                android:textColor="@color/color_text_white"/>
+
+            <TextView
+                android:id="@+id/TvAmt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500 P"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_rounded_transparent"
+                android:layout_toEndOf="@+id/TvAmt4"
+                android:textColor="@color/color_text_white"/>
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/TV_bitcoin_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Hsv"
+        android:text="1 BTC ≈ $8473.06"
+        android:layout_margin="10dp"
+        android:textColor="@color/color_text_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/TV_rate_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/TV_bitcoin_rate"
+        android:text="Exchange rate changes every 30 minutes"
+        android:textColor="@color/color_text_grey"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/TV_bitcoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_rate_text"
+        android:text="$50 / $ 2000"
+        android:layout_margin="10dp"
+        android:textColor="@color/color_text_white"
+        android:textSize="12sp" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/SbTrader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_bitcoin"
+        android:maxHeight="3dip"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:progress="0"
+        android:max="5000"
+        android:progressDrawable="@drawable/progress_bar"
+        android:secondaryProgress="0"
+        android:minHeight="3dip" />
+
+    <TextView
+        android:id="@+id/TV_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SbTrader"
+        android:progress="0"
+        android:layout_margin="10dp"
+        android:max="120"
+        android:textColor="@color/color_text_grey"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_bitcoin_Next"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_button_buy"
+        android:text="NEXT"
+        android:textColor="@color/color_text_white" />
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:id="@+id/TvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LINE"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:background="#1DFFFFFF"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/TV_icclosed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/ic_close" />
+
+    <RelativeLayout
+        android:id="@+id/RlFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#1DFFFFFF"
+        android:layout_below="@+id/TvTitle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Width"
+            android:textSize="12sp"
+            android:padding="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/colorLightGray"/>
+
+        <ImageView
+            android:id="@+id/IvThin"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_border_white"
+            android:src="@drawable/ic_thin"
+            android:layout_toStartOf="@+id/IvMedium"/>
+
+        <ImageView
+            android:id="@+id/IvMedium"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_line_big"
+            android:layout_toStartOf="@+id/IvThick"/>
+
+        <ImageView
+            android:id="@+id/IvThick"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_line_b"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RlSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#1DFFFFFF"
+        android:layout_below="@+id/RlFirst">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply to"
+            android:padding="4dp"
+            android:textSize="12sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/colorLightGray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHART"
+            android:padding="4dp"
+            android:textSize="12sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorLightGray"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/RlSecond"
+        android:layout_marginBottom="10dp">
+
+    <Button
+        android:id="@+id/BtnRestore"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="Restore"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/bg_border"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="apply"
+        android:textColor="@color/colorWhite"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:background="@drawable/btn_background_green"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

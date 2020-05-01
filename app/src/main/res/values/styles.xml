@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="android:windowBackground">@drawable/background</item>
+        <item name="colorTextWhite">@color/colorWhite</item>
+        <item name="colorGreyedText">@color/colorLightGray</item>
+        <item name="colorWhiteTransparent">@color/colorWhiteTrans</item>
+        <item name="colorGradiantGreen">@color/colorGradGreen</item>
+    </style>
+
+    <style name="AlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/color_text_white</item>
+        <item name="android:textColor">@color/color_text_white</item>
+        <item name="android:background">@color/colorBackgroundlight</item>
+    </style>
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated" tools:targetApi="lollipop">#148E13</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TabItemText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="TextLabel" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/colorLightGray</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorLightGray</item>
+        <item name="colorControlNormal">@color/colorLightGray</item>
+        <item name="colorControlActivated">@color/colorLightGray</item>
+    </style>
+
+    <style name="DarkChart" parent="TCDTheme.Dark">
+        <item name="chart_fill_color">#0A1C36</item>
+        <item name="date_scale_fill_color">#0A1C36</item>
+        <item name="y_scale_fill_color">#0A1C36</item>
+    </style>
+
+</resources>

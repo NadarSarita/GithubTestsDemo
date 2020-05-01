@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chat.GroupChatActivity">
+
+    <include
+        android:id="@+id/Tbcontact"
+        layout="@layout/layout_appbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/message_view"
+        android:layout_width ="match_parent"
+        android:layout_height= "match_parent"
+        android:layout_below="@+id/Tbcontact"
+        android:layout_above="@+id/bottom"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:id="@+id/bottom"
+        android:background="@color/color_text_white"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_send"
+            android:background="@android:color/transparent"
+            android:hint="Type a message..."
+            android:layout_toStartOf="@id/btn_send"
+            android:textSize="12sp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/ic_send"
+            android:id="@+id/btn_send"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="DEMO ACCOUNT"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/Tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="TOTAL :"
+        android:textColor="@color/colorLightGray"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/Tv_totalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview1"
+        android:layout_toEndOf="@id/Tv_total"
+        android:text="$9947.05"
+        android:textColor="@color/colorLightGray"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/Tv_UsdCash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_totalValue"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="USD CASH"
+        android:textColor="@color/colorLightGray"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/Tv_UsdCashValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_UsdCash"
+        android:layout_marginStart="20dp"
+        android:text="$9947.05"
+        android:textColor="@color/colorYellow"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_totalValue"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_refresh" />
+
+    <View
+        android:id="@+id/View1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/Tv_UsdCashValue"
+        android:layout_margin="10dp"
+        android:background="@color/color_text_grey" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/View1"
+        android:padding="10dp"
+        android:text="REAL ACCOUNT"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Ready to trade with real money ?"
+        android:textColor="@color/colorLightGray"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/TvAddRealAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_greenborder"
+        android:padding="10dp"
+        android:text="ADD REAL BALANCE"
+        android:textColor="@color/colorGradGreen"
+        android:textSize="10sp" />
+
+</RelativeLayout>

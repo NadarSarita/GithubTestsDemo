@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorWhiteTransparent">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Yesterday"
+        android:textColor="@color/colorWhite" />
+
+    <LinearLayout
+        android:id="@+id/llmoves"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_date"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="0" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Allergan"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/timeline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="2.50% in 10min"
+            android:textColor="@color/colorSell" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/subname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llmoves"
+        android:layout_marginStart="5dp"
+        android:text="12.00 sharp Jump"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorWhite" />
+
+
+</RelativeLayout>

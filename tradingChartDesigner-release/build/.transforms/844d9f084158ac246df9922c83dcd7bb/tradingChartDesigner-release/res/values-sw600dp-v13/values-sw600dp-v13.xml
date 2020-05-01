@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="control_button_height">24dp</dimen>
+    <dimen name="control_button_padding_bottom">4dp</dimen>
+    <dimen name="control_button_padding_left">4dp</dimen>
+    <dimen name="control_button_padding_right">4dp</dimen>
+    <dimen name="control_button_padding_top">4dp</dimen>
+    <dimen name="control_button_width">24dp</dimen>
+    <dimen name="date_marker_padding_bottom">2dp</dimen>
+    <dimen name="date_marker_padding_left">8dp</dimen>
+    <dimen name="date_marker_padding_right">8dp</dimen>
+    <dimen name="date_marker_padding_top">2dp</dimen>
+    <dimen name="drawings_control_button_height">28dp</dimen>
+    <dimen name="drawings_control_button_width">28dp</dimen>
+    <dimen name="text_annotation_padding_bottom">5dp</dimen>
+    <dimen name="text_annotation_padding_left">5dp</dimen>
+    <dimen name="text_annotation_padding_right">5dp</dimen>
+    <dimen name="text_annotation_padding_top">5dp</dimen>
+    <dimen name="value_marker_padding_bottom">2dp</dimen>
+    <dimen name="value_marker_padding_left">10dp</dimen>
+    <dimen name="value_marker_padding_right">10dp</dimen>
+    <dimen name="value_marker_padding_top">2dp</dimen>
+    <dimen name="y_scale_automatic_offset">30dp</dimen>
+    <dimen name="y_scale_padding_bottom">6dp</dimen>
+    <dimen name="y_scale_padding_left">10dp</dimen>
+    <dimen name="y_scale_padding_right">10dp</dimen>
+    <dimen name="y_scale_padding_top">6dp</dimen>
+    <dimen name="y_scale_text_size">10sp</dimen>
+</resources>

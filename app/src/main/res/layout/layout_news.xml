@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/colorWhiteTrans"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <!--<ImageView
+            android:id="@+id/IMG_image"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="web"
+            android:foregroundGravity="center"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="1.5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"/>-->
+
+        <TextView
+            android:id="@+id/TV_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1.5dp"
+            android:layout_marginTop="5dp"
+            android:text="title"
+            android:textColor="@color/colorblue"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TV_headlilne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TV_title"
+            android:layout_marginStart="1.5dp"
+            android:layout_marginTop="10dp"
+            android:text="descr"
+            android:maxLines="4"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp" />
+
+
+        <TextView
+            android:id="@+id/TV_timezone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TV_headlilne"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_pubtime"
+            android:gravity="center"
+            android:text="timezone"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

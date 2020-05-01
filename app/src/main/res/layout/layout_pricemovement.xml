@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_pricemovements"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:text="Price movements"
+        android:textColor="@color/color_text_grey"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_allpricemovements"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_pricemovements"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:text="All Price movements"
+        android:textColor="@color/color_text_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/TV_gap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_allpricemovements"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:text="Gap"
+        android:textColor="@color/color_text_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/TV_sharpjump"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_gap"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:text="Sharp jump"
+        android:textColor="@color/color_text_white"
+        android:textSize="12sp" />
+
+</RelativeLayout>

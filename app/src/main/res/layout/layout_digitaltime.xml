@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#081A30"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/strike1"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textColor="#A0A0A0"
+            android:text="890.9"
+            android:textAlignment="textEnd"
+            android:textSize="10sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/strike2"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="011"
+            android:textSize="10sp"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/totalprofit1"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorWhite"
+                android:drawableStart="@drawable/ic_up_arrow"
+                android:text="256.25"
+                android:textSize="10sp"
+                android:drawablePadding="10dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/totalprofit2"
+            android:layout_width="match_parent"
+            android:textColor="#A0A0A0"
+            android:text="25.32"
+            android:textSize="10sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

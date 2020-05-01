@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.History.Trading.AssetActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@id/appbar"
+        android:layout_marginBottom="2dp">
+
+
+
+    <CheckBox
+        android:id="@+id/CbSelectAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:background="@color/colorWhiteTrans"
+        android:padding="12dp"
+        android:textAlignment="viewEnd"
+        android:onClick="onSelectAllClick"
+        android:textSize="12sp"
+        android:buttonTint="@color/colorLightGray"
+        android:textColor="@color/colorWhite"
+        android:text="Select all" />
+
+    <TextView
+        android:id="@+id/TvDigital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digital"
+        android:textColor="@color/colorLightGray"
+        android:textSize="12sp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/CbSelectAll"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RvAsset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/TvDigital"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+

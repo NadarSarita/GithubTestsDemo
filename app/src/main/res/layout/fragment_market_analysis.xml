@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MarketAnalysis.MarketAnalysisFragment"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/TvPortfolio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Market Analysis"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/color_text_white"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/Tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/TvPortfolio"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/TabItemText"
+        app:tabSelectedTextColor="@color/color_tab_highlight"
+        app:tabIndicatorColor="@color/color_tab_highlight"
+        app:tabTextColor="@color/color_text_grey"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_Pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Tab_layout"/>
+
+</RelativeLayout>

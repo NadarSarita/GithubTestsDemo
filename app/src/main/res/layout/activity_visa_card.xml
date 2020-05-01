@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.Deposit.VisaCardActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar" />
+
+    <TextView
+        android:id="@+id/TvAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbar"
+        android:text="ENTER AMOUNT"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/RlAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvAmt"
+        android:layout_margin="10dp"
+        android:background="@color/color_text_white">
+
+        <EditText
+            android:id="@+id/ETAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:text="500"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_text_white"
+            android:textColor="@color/colorBackground"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/SpAmount_visa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/currency"
+            android:layout_gravity="center_vertical"
+            android:popupBackground="@color/colorBackground" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RlAmount">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/TvAmt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="250 P"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_rounded_transparent" />
+
+            <TextView
+                android:id="@+id/TvAmt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/TvAmt1"
+                android:text="500 P"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_rounded_transparent" />
+
+            <TextView
+                android:id="@+id/TvAmt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/TvAmt2"
+                android:text="500 P"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_rounded_transparent" />
+
+            <TextView
+                android:id="@+id/TvAmt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/TvAmt3"
+                android:text="500 P"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_rounded_transparent" />
+
+            <TextView
+                android:id="@+id/TvAmt5"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/TvAmt4"
+                android:text="500 P"
+                android:textColor="@color/color_text_white"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_rounded_transparent" />
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/Tv_CardInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Hsv"
+        android:text="Card info"
+        android:layout_margin="10dp"
+        android:textColor="@color/color_text_white"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/Tv_CardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_CardInfo"
+        android:background="@color/colorWhiteTrans"
+        android:hint="Card number"
+        android:inputType="number"
+        android:maxLength="16"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/color_text_white"
+        android:textColorHint="@color/color_text_grey"
+        android:textSize="12sp" />
+
+
+    <EditText
+        android:id="@+id/Tv_CardHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_CardNumber"
+        android:background="@color/colorWhiteTrans"
+        android:hint="Card holder"
+        android:inputType="text"
+        android:maxLength="20"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:padding="10dp"
+        android:singleLine="true"
+
+        android:textColor="@color/color_text_white"
+        android:textColorHint="@color/color_text_grey"
+        android:textSize="12sp" />
+
+
+    <EditText
+        android:id="@+id/Tv_Expiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_CardHolder"
+        android:background="@color/colorWhiteTrans"
+        android:hint="MM / YY"
+        android:inputType="number"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:padding="10dp"
+        android:maxLength="4"
+        android:singleLine="true"
+
+        android:textColor="@color/color_text_white"
+        android:textColorHint="@color/color_text_grey"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/Tv_Cvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_Expiry"
+        android:background="@color/colorWhiteTrans"
+        android:hint="CVV/CVC"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:padding="10dp"
+        android:maxLength="4"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="@color/color_text_white"
+        android:textColorHint="@color/color_text_grey"
+        android:textCursorDrawable="@null"
+        android:textSize="12sp"/>
+
+
+    <Button
+        android:id="@+id/btn_visa_deposit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_button_buy"
+        android:text="DEPOSIT $ 500.00"
+        android:textColor="@color/color_text_white" />
+
+</RelativeLayout>

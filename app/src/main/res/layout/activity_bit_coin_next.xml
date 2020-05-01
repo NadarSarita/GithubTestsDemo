@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.Deposit.BitCoinNextActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar" />
+
+    <TextView
+        android:id="@+id/TV_amount_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bitcoin wallet address"
+        android:layout_margin="10dp"
+        android:layout_below="@id/appbar"
+        android:textColor="@color/color_text_grey"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/ETAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/color_text_white"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/TV_amount_header"
+        android:textColor="@color/colorBackground"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/TvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:text="You can send BTC from any wallet,but this address is required for automatic withdrawals in thhe future"
+        android:textColor="@color/color_text_white" />
+    <Button
+        android:id="@+id/btn_Next"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="NEXT"
+        android:textColor="@color/color_text_white"
+        android:background="@drawable/bg_button_buy"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

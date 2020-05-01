@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="OPEN ACCOUNT"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorWhiteTrans"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/Tvclosed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/ic_close" />
+
+    <EditText
+        android:id="@+id/EtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_edittext"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:layout_below="@+id/textview1"
+        android:hint="Your Email Id"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        android:textCursorDrawable="@null"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/EtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EtEmail"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="15dp"
+        android:hint="Your Password"
+        android:background="@drawable/bg_edittext"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        android:textCursorDrawable="@null"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/BtnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/EtPassword"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:textSize="12sp"
+        android:background="@drawable/bg_button_buy"
+        android:text="Login"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/color_text_white" />
+
+</RelativeLayout>

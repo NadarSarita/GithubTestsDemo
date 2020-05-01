@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.History.Trading.BalanceActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_below="@+id/appbar"
+        >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite">
+
+            <RadioButton
+                android:id="@+id/rb_real"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorWhite"
+                android:text="Real"
+                android:textSize="12sp"
+                android:padding="15dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhiteTrans"
+                android:textColor="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/rb_practice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorWhite"
+                android:text="Practice"
+                android:padding="15dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhiteTrans"
+                android:textColor="@color/colorWhite" />
+
+
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

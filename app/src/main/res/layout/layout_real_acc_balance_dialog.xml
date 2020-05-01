@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:id="@+id/RL_Realacc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textview0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="ACCOUNT INFO"
+            android:background="@color/colorWhiteTrans"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/TV_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp"
+            android:background="@drawable/ic_close" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="30dp"
+            android:text="REAL ACCOUNT"
+            android:layout_below="@+id/textview0"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp" />
+
+
+
+        <TextView
+            android:id="@+id/Tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview1"
+            android:layout_marginStart="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="TOTAL :"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/Tv_totalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview1"
+            android:layout_toEndOf="@id/Tv_total"
+            android:text="$9947.05"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/Iv_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_totalValue"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_check"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/Tv_UsdCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_totalValue"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="USD CASH"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/Tv_UsdCashValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_UsdCash"
+            android:layout_marginStart="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="$9947.05"
+            android:textColor="@color/colorGradGreen"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/Iv_deposite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_totalValue"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_deposite" />
+
+        <ImageView
+            android:id="@+id/Iv_withdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_totalValue"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toLeftOf="@+id/Iv_deposite"
+            android:src="@drawable/ic_withdrawal" />
+
+        <View
+            android:id="@+id/View1"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/Tv_UsdCashValue"
+            android:layout_margin="10dp"
+            android:background="@color/colorLightGray" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL_practiceacc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RL_Realacc">
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:padding="10dp"
+            android:text="PRACTICE ACCOUNT"
+
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/Tv_total1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview2"
+            android:layout_marginStart="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="TOTAL : $10000"
+
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/Tv_totalValue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview2"
+            android:layout_toRightOf="@id/Tv_total1"
+            android:text="$9947.05"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/IV_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/Tv_totalValue1"
+            android:src="@drawable/info" />
+
+
+        <TextView
+            android:id="@+id/TV_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_total1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="Total balance summarizes your initial balance,investment amount and clear profit all the open positions"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/Iv_check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_totalValue1"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_check"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/Tv_UsdCash1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TV_info"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="USD CASH"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/Iv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TV_info"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/ic_refresh" />
+
+        <TextView
+            android:id="@+id/Tv_UsdCashValue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_UsdCash1"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="$9947.05"
+            android:textColor="@color/colorYellow"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

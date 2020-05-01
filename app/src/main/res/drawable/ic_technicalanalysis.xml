@@ -1,0 +1,14 @@
+<vector android:height="20dp" android:viewportHeight="512"
+    android:viewportWidth="512" android:width="20dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#928E8D" android:pathData="M256,256m-256,0a256,256 0,1 1,512 0a256,256 0,1 1,-512 0"/>
+    <path android:fillColor="#928E8D" android:pathData="M512,256c0,-18.577 -1.997,-36.686 -5.755,-54.139L394,89.616L118.905,404.988l105.016,105.016C234.43,511.317 245.135,512 256,512C397.385,512 512,397.385 512,256z"/>
+    <path android:fillColor="#C5CACE" android:pathData="M147,89.62h247v299h-247z"/>
+    <path android:fillColor="#C7CBCE" android:pathData="M256.55,89.62h137.45v299h-137.45z"/>
+    <path android:fillColor="#C2C5CE" android:pathData="M113.5,388.616H171v-299h-27.175c-16.659,0 -30.166,13.5 -30.175,30.158L113.5,388.616z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M141,416.116h253v-55H141c-15.188,0 -27.5,12.312 -27.5,27.5l0,0C113.5,403.804 125.812,416.116 141,416.116z"/>
+    <path android:fillColor="#E2F1FC" android:pathData="M256.55,361.12h137.45v55h-137.45z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M282,219.62m-87.5,0a87.5,87.5 0,1 1,175 0a87.5,87.5 0,1 1,-175 0"/>
+    <path android:fillColor="#E2F1FC" android:pathData="M216.888,278.063c16.019,17.833 39.254,29.053 65.112,29.053c48.325,0 87.5,-39.175 87.5,-87.5c0,-23.994 -9.661,-45.729 -25.301,-61.537L216.888,278.063z"/>
+    <path android:fillColor="#989BA4" android:pathData="M344.35,188.858l-36.46,36.46l-32.335,-32.336l36.46,-36.46c-16.563,-5.007 -35.274,-0.971 -48.364,12.12c-13.108,13.108 -17.136,31.852 -12.098,48.431l-45.688,45.687c7.631,13.437 18.715,24.654 32.047,32.446l45.887,-45.887c16.579,5.038 35.323,1.01 48.431,-12.098C345.32,224.131 349.356,205.42 344.35,188.858z"/>
+    <path android:fillColor="#95989C" android:pathData="M307.889,225.318l-16.999,-16.999l-73.994,69.735c6.058,6.744 13.14,12.549 21.014,17.152l45.887,-45.887c16.579,5.038 35.323,1.01 48.431,-12.098c13.091,-13.09 17.126,-31.802 12.12,-48.364L307.889,225.318z"/>
+</vector>

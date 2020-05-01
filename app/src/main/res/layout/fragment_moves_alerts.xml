@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MovesAlerts.MovesAlertsFragment"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/TvMovesAlerts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Moves &amp; Alerts"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/color_text_white"/>
+
+    <TextView
+        android:id="@+id/TvMovesAlertFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All price movements"
+        android:layout_below="@id/TvMovesAlerts"
+        android:textColor="@color/color_text_grey"
+        android:layout_marginBottom="3dp"
+        android:textSize="12sp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:tabMode="scrollable"
+        android:layout_below="@+id/TvMovesAlertFilter"
+        app:tabTextAppearance="@style/TabItemText"
+        app:tabSelectedTextColor="@color/color_tab_highlight"
+        app:tabIndicatorColor="@color/color_tab_highlight"
+        app:tabTextColor="@color/color_text_grey">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabLayout" />
+
+</RelativeLayout>

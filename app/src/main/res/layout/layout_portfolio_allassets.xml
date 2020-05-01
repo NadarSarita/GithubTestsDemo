@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/TV_allassets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:padding="5dp"
+        android:text="All Assets"
+        android:textColor="@color/color_text_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/TV_noexpiration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_allassets"
+        android:drawableStart="@drawable/ic_infinity"
+        android:drawablePadding="10dp"
+        android:padding="5dp"
+        android:text="No expiration"
+        android:textColor="@color/color_text_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/TV_cfd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_noexpiration"
+        android:layout_marginStart="30dp"
+        android:padding="5dp"
+        android:text="CFD"
+        android:textColor="@color/color_text_grey"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/TV_forex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_cfd"
+        android:layout_marginStart="30dp"
+        android:padding="5dp"
+        android:text="Forex"
+        android:textColor="@color/color_text_grey"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/TV_crypto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_forex"
+        android:layout_marginStart="30dp"
+        android:padding="5dp"
+        android:text="Crypto"
+        android:textColor="@color/color_text_grey"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/TV_expiration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_crypto"
+        android:drawableStart="@drawable/ic_infinity"
+        android:drawablePadding="10dp"
+        android:padding="5dp"
+        android:text="Expiration"
+        android:textColor="@color/color_text_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/TV_digital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_expiration"
+        android:layout_marginStart="30dp"
+        android:padding="5dp"
+        android:text="Digital"
+        android:textColor="@color/color_text_grey"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    tools:context=".MainScreen.Indicator.IndiActivity">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="4sp"
+        android:layout_marginRight="4sp"
+        app:tabIndicatorColor="@color/color_tab_highlight"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/color_tab_highlight"
+        app:tabTextAppearance="@style/TabItemText"
+        app:tabTextColor="@color/color_text_grey" />
+
+    <SearchView
+        android:id="@+id/SVIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tl_indicator"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorWhiteTrans"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Indicator"
+        android:textColor="@color/color_text_white"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SVIndicator" />
+
+</RelativeLayout>

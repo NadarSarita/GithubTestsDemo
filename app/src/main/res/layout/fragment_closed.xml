@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    tools:context=".Portfolio.Closed.ClosedFragment">
+
+    <RelativeLayout
+        android:id="@+id/layoutclosed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/bg_rounded_transparent"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/IVLogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_english_chat" />
+
+        <TextView
+            android:id="@+id/tv_st"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@+id/IVLogo"
+            android:text="AUD / JYP"
+            android:textColor="@color/color_text_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_cncy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="6dp"
+            android:text="800000"
+            android:textColor="@color/color_text_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_dgl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_st"
+            android:layout_marginStart="6dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/IVLogo"
+            android:text="Forex"
+            android:textColor="@color/color_text_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cncy"
+            android:layout_alignParentEnd="true"
+            android:text="-100%"
+            android:textColor="@color/colorSell"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/forexlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutclosed"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/bg_rounded_transparent"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/IVLogo1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_english_chat" />
+
+        <TextView
+            android:id="@+id/tv_st1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@+id/IVLogo1"
+            android:text="USD / JYP"
+            android:textColor="@color/color_text_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_cncy1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="6dp"
+            android:text="800000"
+            android:textColor="@color/color_text_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_dgl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_st1"
+            android:layout_marginStart="6dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/IVLogo1"
+            android:text="Digital"
+            android:textColor="@color/color_text_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cncy1"
+            android:layout_alignParentEnd="true"
+            android:text="-100%"
+            android:textColor="@color/colorSell"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cryptolayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forexlayout"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/bg_rounded_transparent"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/IVLogo2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_english_chat" />
+
+        <TextView
+            android:id="@+id/tv_st2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@+id/IVLogo2"
+            android:text="USD / JYP"
+            android:textColor="@color/color_text_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_cncy2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="6dp"
+            android:text="800000"
+            android:textColor="@color/color_text_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_dgl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_st2"
+            android:layout_marginStart="6dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/IVLogo2"
+            android:text="Binance coin x50"
+            android:textColor="@color/color_text_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cncy2"
+            android:layout_alignParentEnd="true"
+            android:text="-100%"
+            android:textColor="@color/colorSell"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

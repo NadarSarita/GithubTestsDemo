@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:id="@+id/card_view"
+    app:cardBackgroundColor="@color/colorWhiteTrans"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/RLchat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/IMG_ChatLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/TV_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="English chat"
+            android:layout_toEndOf="@+id/IMG_ChatLogo"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:id="@+id/TV_lastseen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+           android:layout_below="@+id/TV_chat"
+            android:layout_toEndOf="@+id/IMG_ChatLogo"
+           android:textColor="@color/colorWhite"
+            android:layout_marginStart="10dp"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/TV_lasttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"
+            android:layout_below="@+id/TV_chat"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="10dp"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

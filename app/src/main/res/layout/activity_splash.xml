@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/IvBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/IvLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/applogo"
+        android:layout_marginTop="120dp"/>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.CubeGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:SpinKit_Color="#37FFFFFF"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/TvLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/SomeError"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/color_text_white"
+        android:textAlignment="center"
+        android:fontFamily="serif"
+        android:textSize="12sp"
+        android:visibility="visible"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/SomeError"
+        android:textSize="10sp"
+        android:layout_above="@+id/TvDescription" />
+
+    <TextView
+        android:id="@+id/TvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/color_text_grey"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="serif"
+        android:textSize="10sp"
+        android:visibility="visible"/>
+
+</RelativeLayout>

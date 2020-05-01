@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackgroundlight">
+
+    <LinearLayout
+        android:id="@+id/llfirstlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhiteTrans"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/TV_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="TIME"
+            android:textColor="@color/color_text_grey"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/TV_strike"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="STRIKE"
+            android:textColor="@color/color_text_grey"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/TV_toalprice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="TOTAL PROF. OPTION PROF."
+            android:textColor="@color/color_text_grey"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/TV_icclosed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_close" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TV_timeunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 MINUTE"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_below="@+id/llfirstlayout"
+        android:gravity="center"
+        android:textColor="@color/color_text_grey"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/TV_timecount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_timeunit"
+        android:text="12.33"
+        android:padding="10dp"
+        android:layout_marginStart="15dp"
+        android:background="#081A30"
+        android:textSize="10sp"
+        android:textColor="@color/colorWhite" />
+    <TextView
+        android:id="@+id/TV_timecount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 MINUTE"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_below="@+id/TV_timecount"
+        android:layout_gravity="center"
+        android:textColor="@color/color_text_grey"
+        android:textSize="10sp" />
+    <TextView
+        android:id="@+id/time5min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/TV_timecount1"
+        android:background="#081A30"
+        android:text="12.38"
+        android:textSize="10sp"
+        android:textColor="@color/colorWhite"/>
+    <TextView
+        android:id="@+id/TV_timecount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 MINUTE"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_below="@+id/time5min"
+        android:textColor="@color/color_text_grey"
+        android:textSize="10sp"/>
+    <TextView
+        android:id="@+id/TV_timecount3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_timecount2"
+        android:background="#081A30"
+        android:text="12.38"
+        android:padding="10dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/time_view"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/llfirstlayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/strikeautoselection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_timecount3"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:text="STRIKE AUTO-SELECTION"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_text_grey"
+        android:textSize="10sp"
+        tools:ignore="RtlCompat" />
+
+    <LinearLayout
+        android:id="@+id/LLtabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/strikeautoselection"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/BTN_off"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="OFF"
+            android:background="#081A30"
+            android:layout_marginTop="2dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/color_text_white"
+            android:textSize="10sp"
+            android:scrollIndicators="start"
+            />
+
+        <TextView
+            android:id="@+id/BTN_close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CLOSEST"
+            android:background="#081A30"
+            android:layout_marginTop="2dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/color_text_white"
+            android:textSize="10sp"
+            android:scrollIndicators="start"
+            />
+
+        <TextView
+            android:id="@+id/BTN_spot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:text="SPOT"
+            android:gravity="center"
+            android:background="#081A30"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/color_text_white"
+            android:textSize="10sp"
+            android:scrollIndicators="start"/>
+
+
+    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:id="@+id/views"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/LLtabs"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <View-->
+<!--            android:id="@+id/offview"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="5dp"-->
+<!--            android:layout_weight="1"-->
+<!--            />-->
+
+<!--        <View-->
+<!--            android:id="@+id/closestview"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="5dp"-->
+<!--            android:layout_weight="1"-->
+<!--            />-->
+<!--        <View-->
+<!--            android:id="@+id/spotview"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="5dp"-->
+<!--            android:layout_weight="1"-->
+<!--            />-->
+
+<!--    </LinearLayout>-->
+</RelativeLayout>

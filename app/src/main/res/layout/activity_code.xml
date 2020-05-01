@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_layout">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar" />
+
+    <TextView
+        android:id="@+id/TvPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+919856754832"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/appbar"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/TvDecp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="We sent you an SMS with the code"
+        android:textColor="@color/colorLightGray"
+        android:textSize="12sp"
+        android:layout_below="@+id/TvPhoneNumber"/>
+
+    <TextView
+        android:id="@+id/TvCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/colorLightGray"
+        android:textSize="12sp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/TvDecp"/>
+
+    <EditText
+        android:id="@+id/EtCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="12sp"
+        android:padding="6dp"
+        android:background="@drawable/bg_rounded_transparent"
+        android:textColor="@color/color_text_white"
+        android:layout_below="@+id/TvCode"/>
+
+    <Button
+        android:id="@+id/BtnRedeem"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/EtCode"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/bg_button_buy"
+        android:text="REDEEM"
+        android:textSize="12sp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/Tv_ResendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EtCode"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="34dp"
+        android:text="RESEND CODE"
+        android:textSize="12sp"
+        android:textColor="@color/colorLightGray"
+        android:layout_toRightOf="@+id/BtnRedeem"/>
+
+    <TextView
+        android:id="@+id/resend_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EtCode"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="34dp"
+        android:text="00:50"
+        android:inputType="time"
+        android:textSize="12sp"
+        android:textColor="@color/colorWhite"
+        android:layout_toRightOf="@+id/Tv_ResendCode"/>
+
+</RelativeLayout>

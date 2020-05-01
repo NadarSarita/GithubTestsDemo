@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Assets.SymbolListActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhiteTrans"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TvBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/ic_back"
+            android:drawablePadding="5dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:text="Back"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/Tv_Digital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/ic_asset_option"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="Digital"
+            android:background="@drawable/bg_rounded_transparent"
+            android:padding="10dp"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/Tv_Forex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/ic_asset_forex"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="Forex"
+            android:padding="10dp"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/Tv_Stocks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/ic_asset_stocks"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="Stocks"
+            android:padding="10dp"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/Tv_ETF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/ic_asset_etf"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="ETF"
+            android:padding="10dp"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/Tv_Commodities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/ic_asset_commod"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:text="Commod."
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/Tv_Crypto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/ic_asset_crypto"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="Crypto"
+            android:padding="10dp"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLFrames"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/linearlayout1"
+        android:animateLayoutChanges="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginStart="1dp">
+
+        <FrameLayout
+            android:id="@+id/FragmentHolder1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

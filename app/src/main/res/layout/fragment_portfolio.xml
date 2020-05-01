@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Portfolio.PortfolioFragment"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/TvPortfolio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Portfolio"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/color_text_white"/>
+
+    <TextView
+        android:id="@+id/TvPortfolioPopup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Assets"
+        android:textColor="@color/color_text_grey"
+        android:textSize="10sp"
+        android:layout_below="@+id/TvPortfolio"
+        android:layout_marginBottom="3dp"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_portfolio"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginRight="4sp"
+        android:layout_marginLeft="4sp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/color_tab_highlight"
+        app:tabIndicatorColor="@color/color_tab_highlight"
+        app:tabTextColor="@color/color_text_grey"
+        app:tabTextAppearance="@style/TabItemText"
+        android:layout_below="@+id/TvPortfolioPopup"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tl_portfolio"/>
+
+</RelativeLayout>

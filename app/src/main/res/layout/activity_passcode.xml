@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Profile.Settings.Security.PasscodeActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar" />
+
+    <Switch
+        android:id="@+id/SPasscode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/use_passcode"
+        android:padding="12dp"
+        android:layout_below="@+id/appbar"
+        android:textSize="14sp"
+        android:background="#1DFFFFFF"
+        android:thumbTint="@color/thumb_color_selector"
+        android:trackTint="@color/track_color_selector"
+
+
+        android:textColor="@color/colorWhite"/>
+
+    <Button
+        android:id="@+id/btn_set_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/set_password"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:background="#0AA824"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

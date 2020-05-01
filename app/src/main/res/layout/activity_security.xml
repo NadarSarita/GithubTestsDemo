@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.Settings.Security.SecurityActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar" />
+
+    <TextView
+        android:id="@+id/TvAuthentication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbar"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/colorWhiteTrans"
+        android:drawableStart="@drawable/ic_security"
+        android:drawablePadding="16dp"
+        android:padding="10dp"
+        android:text="2-Step Authentication"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/TvPasscode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvAuthentication"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/colorWhiteTrans"
+        android:drawableStart="@drawable/ic_fingerprint"
+        android:drawablePadding="16dp"
+        android:padding="10dp"
+        android:text="Passcode"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/TvActivesessions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvPasscode"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/colorWhiteTrans"
+        android:drawableStart="@drawable/ic_time"
+        android:drawablePadding="16dp"
+        android:padding="10dp"
+        android:text="Active sessions"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/TvChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvActivesessions"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/colorWhiteTrans"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="16dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:text="Change Password"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp" />
+
+</RelativeLayout>

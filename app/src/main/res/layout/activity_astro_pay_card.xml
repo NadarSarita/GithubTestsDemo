@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.Deposit.AstroPayCardActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar" />
+
+    <TextView
+        android:id="@+id/TvAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:layout_margin="10dp"
+        android:text="ENTER AMOUNT"
+        android:textColor="@color/color_text_grey"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/RlAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvAmt"
+        android:layout_margin="10dp"
+        android:background="@color/color_text_white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ETAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/color_text_white"
+            android:inputType="number"
+            android:padding="2dp"
+            android:text="500"
+            android:textColor="@color/colorBackground"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/SpAmount_Astropay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:entries="@array/currency"
+            android:popupBackground="@drawable/background" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RlAmount">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/TvAmt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_rounded_transparent"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                android:text="250 P"
+                android:textColor="@color/color_text_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/TvAmt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/TvAmt1"
+                android:background="@drawable/bg_rounded_transparent"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                android:text="500 P"
+                android:textColor="@color/color_text_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/TvAmt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/TvAmt2"
+                android:background="@drawable/bg_rounded_transparent"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                android:text="500 P"
+                android:textColor="@color/color_text_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/TvAmt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/TvAmt3"
+                android:background="@drawable/bg_rounded_transparent"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                android:text="500 P"
+                android:textColor="@color/color_text_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/TvAmt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/TvAmt4"
+                android:background="@drawable/bg_rounded_transparent"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                android:text="500 P"
+                android:textColor="@color/color_text_white"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/Tv_CardInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Hsv"
+        android:layout_margin="10dp"
+        android:text="Card info"
+        android:textColor="@color/color_text_grey"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/Tv_CardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_CardInfo"
+        android:layout_margin="1dp"
+        android:background="@color/colorWhiteTrans"
+        android:hint="Card Number"
+        android:inputType="number"
+        android:maxLength="16"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/color_text_white"
+        android:textColorHint="@color/color_text_grey"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/Tv_CardHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_CardNumber"
+        android:layout_margin="1dp"
+        android:background="@color/colorWhiteTrans"
+        android:hint="Card Holder Name"
+        android:inputType="text"
+        android:maxLength="20"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/color_text_white"
+        android:textColorHint="@color/color_text_grey"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/Tv_Expiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_CardHolder"
+        android:layout_margin="1dp"
+        android:background="@color/colorWhiteTrans"
+        android:hint="MM / YY"
+        android:inputType="number"
+        android:maxLength="4"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/color_text_white"
+        android:textColorHint="@color/color_text_grey"
+        android:textSize="12sp" />
+
+
+    <EditText
+        android:id="@+id/Tv_Cvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_Expiry"
+        android:layout_margin="1dp"
+        android:background="@color/colorWhiteTrans"
+        android:hint="CVV/CVC"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/color_text_white"
+        android:textColorHint="@color/color_text_grey"
+        android:textCursorDrawable="@null"
+        android:textSize="12sp"
+        app:passwordToggleEnabled="true" />
+
+
+    <Button
+        android:id="@+id/btn_AstroPay_Next"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_button_buy"
+        android:text="DEPOSIT $ 500.00"
+        android:textColor="@color/color_text_white" />
+
+</RelativeLayout>
+

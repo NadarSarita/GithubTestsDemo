@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bar_down_color_dark">#ff0000</color>
+    <color name="bar_down_color_light">#ff0000</color>
+    <color name="bar_up_color_dark">#4AB077</color>
+    <color name="bar_up_color_light">#4AB077</color>
+    <color name="chart_fill_color_dark">#1c1e20</color>
+    <color name="chart_fill_color_light">#FAFAFA</color>
+    <color name="controls_color_dark">#ffffff</color>
+    <color name="controls_color_light">#333333</color>
+    <color name="crosshair_color_dark">#D3D3D3</color>
+    <color name="crosshair_color_light">#555555</color>
+    <color name="crosshair_marker_color_dark">#D3D3D3</color>
+    <color name="crosshair_marker_color_light">#555555</color>
+    <color name="crosshair_marker_text_color_dark">#000000</color>
+    <color name="crosshair_marker_text_color_light">#E0E0E0</color>
+    <color name="crosshair_text_color_dark">#ffffff</color>
+    <color name="crosshair_text_color_light">#555555</color>
+    <color name="date_scale_fill_color_dark">#26282a</color>
+    <color name="date_scale_fill_color_light">#ffffff</color>
+    <color name="date_scale_line_color_dark">#333944</color>
+    <color name="date_scale_line_color_light">#a1a1a1</color>
+    <color name="date_scale_text_color_dark">#ffffff</color>
+    <color name="date_scale_text_color_light">#333333</color>
+    <color name="drawing_andrews_pitch_fork_line_dark">#ffffff</color>
+    <color name="drawing_andrews_pitch_fork_line_light">#000000</color>
+    <color name="drawing_circle_border_line_dark">#ffffff</color>
+    <color name="drawing_circle_border_line_light">#4B4B4B</color>
+    <color name="drawing_circle_fill_dark">#00ffffff</color>
+    <color name="drawing_circle_fill_light">#004B4B4B</color>
+    <color name="drawing_ellipse_border_line_dark">#ffffff</color>
+    <color name="drawing_ellipse_border_line_light">#4B4B4B</color>
+    <color name="drawing_ellipse_fill_dark">#00ffffff</color>
+    <color name="drawing_ellipse_fill_light">#004B4B4B</color>
+    <color name="drawing_fibonacci_circle_radius_line_dark">#ffffff</color>
+    <color name="drawing_fibonacci_circle_radius_line_light">#4B4B4B</color>
+    <color name="drawing_fibonacci_extension_border_dark">#ffffff</color>
+    <color name="drawing_fibonacci_extension_border_light">#4B4B4B</color>
+    <color name="drawing_fibonacci_fifth_line_dark">#ffffff</color>
+    <color name="drawing_fibonacci_fifth_line_light">#4B4B4B</color>
+    <color name="drawing_fibonacci_first_line_dark">#ffffff</color>
+    <color name="drawing_fibonacci_first_line_light">#4B4B4B</color>
+    <color name="drawing_fibonacci_fourth_line_dark">#ffffff</color>
+    <color name="drawing_fibonacci_fourth_line_light">#4B4B4B</color>
+    <color name="drawing_fibonacci_retracements_diagonal_dark">#ffffff</color>
+    <color name="drawing_fibonacci_retracements_diagonal_light">#4B4B4B</color>
+    <color name="drawing_fibonacci_second_line_dark">#ffffff</color>
+    <color name="drawing_fibonacci_second_line_light">#4B4B4B</color>
+    <color name="drawing_fibonacci_seventh_line_dark">#ffffff</color>
+    <color name="drawing_fibonacci_seventh_line_light">#4B4B4B</color>
+    <color name="drawing_fibonacci_sixth_line_dark">#ffffff</color>
+    <color name="drawing_fibonacci_sixth_line_light">#4B4B4B</color>
+    <color name="drawing_fibonacci_third_line_dark">#ffffff</color>
+    <color name="drawing_fibonacci_third_line_light">#4B4B4B</color>
+    <color name="drawing_line_dark">#ffffff</color>
+    <color name="drawing_line_light">#4B4B4B</color>
+    <color name="drawing_rectangle_border_dark">#ffffff</color>
+    <color name="drawing_rectangle_border_light">#4B4B4B</color>
+    <color name="drawing_rectangle_fill_dark">#00ffffff</color>
+    <color name="drawing_rectangle_fill_light">#004B4B4B</color>
+    <color name="drawing_selection_marker_border_dark">#bbffffff</color>
+    <color name="drawing_selection_marker_border_light">#000000</color>
+    <color name="drawing_selection_marker_fill_dark">#000000</color>
+    <color name="drawing_selection_marker_fill_light">#000000</color>
+    <color name="drawing_shapes_fill_dark">#ffffff</color>
+    <color name="drawing_shapes_fill_light">#4B4B4B</color>
+    <color name="drawing_trend_channel_line_dark">#00ffffff</color>
+    <color name="drawing_trend_channel_line_light">#004B4B4B</color>
+    <color name="drawing_triangle_border_dark">#ffffff</color>
+    <color name="drawing_triangle_border_light">#4B4B4B</color>
+    <color name="drawing_triangle_fill_dark">#00ffffff</color>
+    <color name="drawing_triangle_fill_light">#004B4B4B</color>
+    <color name="grid_line_color_dark">#2c2e30</color>
+    <color name="grid_line_color_light">#EEEEEE</color>
+    <color name="indicator_aroon_bottom_line_dark">#ff0000</color>
+    <color name="indicator_aroon_bottom_line_light">#ff0000</color>
+    <color name="indicator_aroon_oscilator_line_dark">#ffffff</color>
+    <color name="indicator_aroon_oscilator_line_light">#000000</color>
+    <color name="indicator_aroon_top_line_dark">#4AB077</color>
+    <color name="indicator_aroon_top_line_light">#4AB077</color>
+    <color name="indicator_atr_line_dark">#ffffff</color>
+    <color name="indicator_atr_line_light">#000000</color>
+    <color name="indicator_bollinger_bands_bottom_line_dark">#ff0000</color>
+    <color name="indicator_bollinger_bands_bottom_line_light">#ff0000</color>
+    <color name="indicator_bollinger_bands_median_line_dark">#ffffff</color>
+    <color name="indicator_bollinger_bands_median_line_light">#000000</color>
+    <color name="indicator_bollinger_bands_top_line_dark">#4AB077</color>
+    <color name="indicator_bollinger_bands_top_line_light">#4AB077</color>
+    <color name="indicator_commodity_channel_index_line_dark">#ffffff</color>
+    <color name="indicator_commodity_channel_index_line_light">#000000</color>
+    <color name="indicator_coppock_curve_line_dark">#ffffff</color>
+    <color name="indicator_coppock_curve_line_light">#000000</color>
+    <color name="indicator_detrended_price_oscillator_line_dark">#B71C1C</color>
+    <color name="indicator_detrended_price_oscillator_line_light">#B71C1C</color>
+    <color name="indicator_directional_movement_system_bottom_line_dark">#ff0000</color>
+    <color name="indicator_directional_movement_system_bottom_line_light">#ff0000</color>
+    <color name="indicator_directional_movement_system_median_line_dark">#ffffff</color>
+    <color name="indicator_directional_movement_system_median_line_light">#000000</color>
+    <color name="indicator_directional_movement_system_top_line_dark">#4AB077</color>
+    <color name="indicator_directional_movement_system_top_line_light">#008000</color>
+    <color name="indicator_down_marker_text_color_dark">#ffffff</color>
+    <color name="indicator_down_marker_text_color_light">#ffffff</color>
+    <color name="indicator_elder_force_index_indicator_line_dark">#4AB077</color>
+    <color name="indicator_elder_force_index_indicator_line_light">#4AB077</color>
+    <color name="indicator_elder_force_index_signal_line_dark">#B71C1C</color>
+    <color name="indicator_elder_force_index_signal_line_light">#B71C1C</color>
+    <color name="indicator_exponential_moving_average_line_dark">#0000ff</color>
+    <color name="indicator_exponential_moving_average_line_light">#0000ff</color>
+    <color name="indicator_fractal_chaos_bands_high_line_dark">#B71C1C</color>
+    <color name="indicator_fractal_chaos_bands_high_line_light">#B71C1C</color>
+    <color name="indicator_fractal_chaos_bands_low_line_dark">#01579B</color>
+    <color name="indicator_fractal_chaos_bands_low_line_light">#01579B</color>
+    <color name="indicator_ichimoku_base_fill_color_dark">#80008000</color>
+    <color name="indicator_ichimoku_base_fill_color_light">#80008000</color>
+    <color name="indicator_ichimoku_cloud_chikou_span_line_dark">#FF469A17</color>
+    <color name="indicator_ichimoku_cloud_chikou_span_line_light">#4AB077</color>
+    <color name="indicator_ichimoku_cloud_kijun_sen_line_dark">#FF9A1717</color>
+    <color name="indicator_ichimoku_cloud_kijun_sen_line_light">#FF9A1717</color>
+    <color name="indicator_ichimoku_cloud_senkou_span_a_line_dark">#FF028102</color>
+    <color name="indicator_ichimoku_cloud_senkou_span_a_line_light">#4AB077</color>
+    <color name="indicator_ichimoku_cloud_senkou_span_b_line_dark">#FF028102</color>
+    <color name="indicator_ichimoku_cloud_senkou_span_b_line_light">#4AB077</color>
+    <color name="indicator_ichimoku_cloud_tenkansen_line_dark">#457dd7</color>
+    <color name="indicator_ichimoku_cloud_tenkansen_line_light">#457dd7</color>
+    <color name="indicator_ichimoku_inverted_fill_color_dark">#80ff0000</color>
+    <color name="indicator_ichimoku_inverted_fill_color_light">#80ff0000</color>
+    <color name="indicator_intraday_momentum_index_line_dark">#ffffff</color>
+    <color name="indicator_intraday_momentum_index_line_light">#000000</color>
+    <color name="indicator_klinger_volume_oscillator_line_dark">#B71C1C</color>
+    <color name="indicator_klinger_volume_oscillator_line_light">#B71C1C</color>
+    <color name="indicator_linear_regression_forecast_line_dark">#4AB077</color>
+    <color name="indicator_linear_regression_forecast_line_light">#4AB077</color>
+    <color name="indicator_linear_regression_intercept_line_dark">#f6b26b</color>
+    <color name="indicator_linear_regression_intercept_line_light">#f6b26b</color>
+    <color name="indicator_macd_d_line_dark">#B71C1C</color>
+    <color name="indicator_macd_d_line_light">#ff0a03</color>
+    <color name="indicator_macd_dark">#40ffffff</color>
+    <color name="indicator_macd_histogram_color_dark">#4AB077</color>
+    <color name="indicator_macd_histogram_color_light">#4AB077</color>
+    <color name="indicator_macd_histogram_line_dark">#B71C1C</color>
+    <color name="indicator_macd_histogram_line_light">#515151</color>
+    <color name="indicator_macd_k_line_dark">#c8c8c9</color>
+    <color name="indicator_macd_k_line_light">#c8c8c9</color>
+    <color name="indicator_macd_light">#40ffffff</color>
+    <color name="indicator_macd_line_dark">#ffffff</color>
+    <color name="indicator_macd_line_light">#000000</color>
+    <color name="indicator_macd_signal_dark">#40ff0000</color>
+    <color name="indicator_macd_signal_light">#40ff0000</color>
+    <color name="indicator_macd_signal_line_dark">#ff0000</color>
+    <color name="indicator_macd_signal_line_light">#ff0000</color>
+    <color name="indicator_middle_marker_text_color_dark">#000000</color>
+    <color name="indicator_middle_marker_text_color_light">#ffffff</color>
+    <color name="indicator_momentum_oscillator_line_dark">#ffffff</color>
+    <color name="indicator_momentum_oscillator_line_light">#000000</color>
+    <color name="indicator_moving_average_envelope_bottom_line_dark">#ff0000</color>
+    <color name="indicator_moving_average_envelope_bottom_line_light">#ff0000</color>
+    <color name="indicator_moving_average_envelope_median_line_dark">#4AB077</color>
+    <color name="indicator_moving_average_envelope_median_line_light">#4AB077</color>
+    <color name="indicator_moving_average_envelope_top_line_dark">#ffffff</color>
+    <color name="indicator_moving_average_envelope_top_line_light">#000000</color>
+    <color name="indicator_parabolic_sar_line_dark">#B71C1C</color>
+    <color name="indicator_parabolic_sar_line_light">#B71C1C</color>
+    <color name="indicator_parabolic_sar_shape_dark">#0000ff</color>
+    <color name="indicator_parabolic_sar_shape_light">#4B4B4B</color>
+    <color name="indicator_qstick_line_dark">#B71C1C</color>
+    <color name="indicator_qstick_line_light">#B71C1C</color>
+    <color name="indicator_relative_strength_index_line_dark">#ff0000</color>
+    <color name="indicator_relative_strength_index_line_light">#ff0000</color>
+    <color name="indicator_relative_strength_main_end_dark">#cc505056</color>
+    <color name="indicator_relative_strength_main_end_light">#cc505056</color>
+    <color name="indicator_relative_strength_main_start_dark">#cca6a6b8</color>
+    <color name="indicator_relative_strength_main_start_light">#cca6a6b8</color>
+    <color name="indicator_relative_strength_middle_line_dark">#FFFFFF</color>
+    <color name="indicator_relative_strength_middle_line_light">#000000</color>
+    <color name="indicator_relative_strength_overbought_end_dark">#cc2afffb</color>
+    <color name="indicator_relative_strength_overbought_end_light">#cc2afffb</color>
+    <color name="indicator_relative_strength_overbought_line_dark">#29ebfd</color>
+    <color name="indicator_relative_strength_overbought_line_light">#00009b</color>
+    <color name="indicator_relative_strength_overbought_start_dark">#cc1d96a8</color>
+    <color name="indicator_relative_strength_overbought_start_light">#cc1d96a8</color>
+    <color name="indicator_relative_strength_oversold_end_dark">#cc88825a</color>
+    <color name="indicator_relative_strength_oversold_end_light">#cc88825a</color>
+    <color name="indicator_relative_strength_oversold_line_dark">#f8db4e</color>
+    <color name="indicator_relative_strength_oversold_line_light">#ff9900</color>
+    <color name="indicator_relative_strength_oversold_start_dark">#ccffd92e</color>
+    <color name="indicator_relative_strength_oversold_start_light">#ccffd92e</color>
+    <color name="indicator_simple_moving_average_line_dark">#ff9900</color>
+    <color name="indicator_simple_moving_average_line_light">#ff9900</color>
+    <color name="indicator_standard_deviation_line_dark">#FFFFFF</color>
+    <color name="indicator_standard_deviation_line_light">#000000</color>
+    <color name="indicator_stochastic_momentum_index_d_line_dark">#B71C1C</color>
+    <color name="indicator_stochastic_momentum_index_d_line_light">#B71C1C</color>
+    <color name="indicator_stochastic_momentum_index_k_line_dark">#01579B</color>
+    <color name="indicator_stochastic_momentum_index_k_line_light">#01579B</color>
+    <color name="indicator_stochastic_oscillator_d_line_dark">#4AB077</color>
+    <color name="indicator_stochastic_oscillator_d_line_light">#4AB077</color>
+    <color name="indicator_stochastic_oscillator_k_line_dark">#ff0000</color>
+    <color name="indicator_stochastic_oscillator_k_line_light">#ff0000</color>
+    <color name="indicator_top_line_dark">#000000</color>
+    <color name="indicator_top_line_light">#ffffff</color>
+    <color name="indicator_up_marker_text_color_dark">#ffffff</color>
+    <color name="indicator_up_marker_text_color_light">#ffffff</color>
+    <color name="indicator_volume_oscillator_line_dark">#4AB077</color>
+    <color name="indicator_volume_oscillator_line_light">#4AB077</color>
+    <color name="indicator_volume_roc_line_dark">#c27ba0</color>
+    <color name="indicator_volume_roc_line_light">#c27ba0</color>
+    <color name="indicator_weighted_moving_average_line_dark">#4AB077</color>
+    <color name="indicator_weighted_moving_average_line_light">#4AB077</color>
+    <color name="indicator_welles_wilder_smoothing_line_dark">#ff00ff</color>
+    <color name="indicator_welles_wilder_smoothing_line_light">#ff00ff</color>
+    <color name="indicator_williams_accumulation_distribution_line_dark">#ff9900</color>
+    <color name="indicator_williams_accumulation_distribution_line_light">#ff9900</color>
+    <color name="indicator_williams_prc_r_line_dark">#ffffff</color>
+    <color name="indicator_williams_prc_r_line_light">#000000</color>
+    <color name="instrument_logo_annotation_text_color_dark">#2c2e30</color>
+    <color name="instrument_logo_annotation_text_color_light">#EEEEEE</color>
+    <color name="logo_annotation_text_color_dark">#31FFFFFF</color>
+    <color name="logo_annotation_text_color_light">#5947769E</color>
+    <color name="panels_rect_line_color_dark">#333944</color>
+    <color name="panels_rect_line_color_light">#a1a1a1</color>
+    <color name="splitter_line_color_dark">#545e76</color>
+    <color name="splitter_line_color_light">#c9c9c9</color>
+    <color name="splitter_touched_line_color_dark">#bababa</color>
+    <color name="splitter_touched_line_color_light">#9099af</color>
+    <color name="title_color_dark">#FFFFFFFF</color>
+    <color name="title_color_light">#000000</color>
+    <color name="value_marker_border_line_color_dark">#ff0000</color>
+    <color name="value_marker_border_line_color_light">#ff0000</color>
+    <color name="value_marker_fill_color_dark">#ff0000</color>
+    <color name="value_marker_fill_color_light">#ff0000</color>
+    <color name="value_marker_text_color_dark">#ffffff</color>
+    <color name="value_marker_text_color_light">#ffffff</color>
+    <color name="y_scale_fill_color_dark">#26282a</color>
+    <color name="y_scale_fill_color_light">#FFFFFF</color>
+    <color name="y_scale_text_color_dark">#ffffff</color>
+    <color name="y_scale_text_color_light">#333333</color>
+    <dimen name="control_button_height">20dp</dimen>
+    <dimen name="control_button_padding_bottom">3dp</dimen>
+    <dimen name="control_button_padding_left">3dp</dimen>
+    <dimen name="control_button_padding_right">3dp</dimen>
+    <dimen name="control_button_padding_top">3dp</dimen>
+    <dimen name="control_button_width">20dp</dimen>
+    <dimen name="crosshair_line_width">1dp</dimen>
+    <dimen name="crosshair_rect_line_width">1dp</dimen>
+    <dimen name="crosshair_terget_rect_size">5dp</dimen>
+    <dimen name="crosshair_text_size">5sp</dimen>
+    <dimen name="date_marker_border_line_width">1dp</dimen>
+    <dimen name="date_marker_padding_bottom">2dp</dimen>
+    <dimen name="date_marker_padding_left">4dp</dimen>
+    <dimen name="date_marker_padding_right">4dp</dimen>
+    <dimen name="date_marker_padding_top">2dp</dimen>
+    <dimen name="date_marker_text_size">8sp</dimen>
+    <dimen name="date_scale_padding_bottom">3dp</dimen>
+    <dimen name="date_scale_padding_left">2dp</dimen>
+    <dimen name="date_scale_padding_right">2dp</dimen>
+    <dimen name="date_scale_padding_top">3dp</dimen>
+    <dimen name="date_scale_text_size">8sp</dimen>
+    <dimen name="drawing_andrews_pitch_fork_line">1dp</dimen>
+    <dimen name="drawing_arrow_radius">4dp</dimen>
+    <dimen name="drawing_balloon_padding">8dp</dimen>
+    <dimen name="drawing_balloon_radius">6dp</dimen>
+    <dimen name="drawing_balloon_text_size">10sp</dimen>
+    <dimen name="drawing_circle_border_line">1dp</dimen>
+    <dimen name="drawing_dot_radius">4dp</dimen>
+    <dimen name="drawing_ellipse_border_line">1dp</dimen>
+    <dimen name="drawing_fibonacci_circle_radius_line">1dp</dimen>
+    <dimen name="drawing_fibonacci_fifth_line">1dp</dimen>
+    <dimen name="drawing_fibonacci_first_line">1dp</dimen>
+    <dimen name="drawing_fibonacci_fourth_line">1dp</dimen>
+    <dimen name="drawing_fibonacci_second_line">1dp</dimen>
+    <dimen name="drawing_fibonacci_seventh_line">1dp</dimen>
+    <dimen name="drawing_fibonacci_sixth_line">1dp</dimen>
+    <dimen name="drawing_fibonacci_text">8dp</dimen>
+    <dimen name="drawing_fibonacci_third_line">1dp</dimen>
+    <dimen name="drawing_line">1dp</dimen>
+    <dimen name="drawing_note_radius">14dp</dimen>
+    <dimen name="drawing_note_text_size">10sp</dimen>
+    <dimen name="drawing_rectangle_border">1dp</dimen>
+    <dimen name="drawing_selection_marker_height">8dp</dimen>
+    <dimen name="drawing_selection_marker_line_width">1dp</dimen>
+    <dimen name="drawing_selection_marker_width">8dp</dimen>
+    <dimen name="drawing_trend_channel_line">1dp</dimen>
+    <dimen name="drawing_triangle_border">1dp</dimen>
+    <dimen name="drawings_control_button_height">24dp</dimen>
+    <dimen name="drawings_control_button_width">24dp</dimen>
+    <dimen name="grid_line_width">0.5dp</dimen>
+    <dimen name="indicator_aroon_line">1dp</dimen>
+    <dimen name="indicator_aroon_oscillator_bottom_line">1dp</dimen>
+    <dimen name="indicator_aroon_oscillator_top_line">1dp</dimen>
+    <dimen name="indicator_bollinger_bands_bottom_line">1dp</dimen>
+    <dimen name="indicator_bollinger_bands_median_line">1dp</dimen>
+    <dimen name="indicator_bollinger_bands_top_line">1dp</dimen>
+    <dimen name="indicator_commodity_channel_index_line">1dp</dimen>
+    <dimen name="indicator_coppock_curve_line">1dp</dimen>
+    <dimen name="indicator_default_line">1dp</dimen>
+    <dimen name="indicator_detrended_price_oscillator_line">1dp</dimen>
+    <dimen name="indicator_directional_movement_system_bottom_line">1dp</dimen>
+    <dimen name="indicator_directional_movement_system_median_line">1dp</dimen>
+    <dimen name="indicator_directional_movement_system_top_line">1dp</dimen>
+    <dimen name="indicator_elder_force_indicator_line">1dp</dimen>
+    <dimen name="indicator_elder_force_signal_line">1dp</dimen>
+    <dimen name="indicator_elder_ray_bear_power_line">1dp</dimen>
+    <dimen name="indicator_elder_ray_bull_power_line">1dp</dimen>
+    <dimen name="indicator_exponential_moving_average_line">1dp</dimen>
+    <dimen name="indicator_fractal_chaos_bands_high_line">1dp</dimen>
+    <dimen name="indicator_fractal_chaos_bands_low_line">1dp</dimen>
+    <dimen name="indicator_intraday_momentum_index_line">2dp</dimen>
+    <dimen name="indicator_klinger_volume_oscillator_line">1dp</dimen>
+    <dimen name="indicator_linear_regression_forecast_line">1dp</dimen>
+    <dimen name="indicator_linear_regression_intercept_line">1dp</dimen>
+    <dimen name="indicator_macd_histogram_line">1dp</dimen>
+    <dimen name="indicator_macd_line">1dp</dimen>
+    <dimen name="indicator_macd_signal_line">1dp</dimen>
+    <dimen name="indicator_momentum_oscillator_line">2dp</dimen>
+    <dimen name="indicator_moving_average_envelope_bottom_line">1dp</dimen>
+    <dimen name="indicator_moving_average_envelope_top_line">1dp</dimen>
+    <dimen name="indicator_parabolic_sar_line">1dp</dimen>
+    <dimen name="indicator_qstick_line">1dp</dimen>
+    <dimen name="indicator_relative_strength_index_line">1dp</dimen>
+    <dimen name="indicator_rsi_text_size">10sp</dimen>
+    <dimen name="indicator_simple_moving_average_line">1dp</dimen>
+    <dimen name="indicator_stochastic_momentum_index_d_line">1dp</dimen>
+    <dimen name="indicator_stochastic_momentum_index_k_line">1dp</dimen>
+    <dimen name="indicator_stochastic_oscillator_d_line">1dp</dimen>
+    <dimen name="indicator_stochastic_oscillator_k_line">1dp</dimen>
+    <dimen name="indicator_top_line">2dp</dimen>
+    <dimen name="indicator_volume_oscillator_line">1dp</dimen>
+    <dimen name="indicator_volume_roc_line">1dp</dimen>
+    <dimen name="indicator_weighted_moving_average_line">1dp</dimen>
+    <dimen name="indicator_welles_wilder_smoothing_line">1dp</dimen>
+    <dimen name="indicator_williams_accumulation_distribution_line">1dp</dimen>
+    <dimen name="indicator_williams_prc_r_line">1dp</dimen>
+    <dimen name="instrument_logo_annotation_text_size">48sp</dimen>
+    <dimen name="logo_annotation_interval">5dp</dimen>
+    <dimen name="logo_annotation_padding_bottom">10dp</dimen>
+    <dimen name="logo_annotation_padding_left">10dp</dimen>
+    <dimen name="logo_annotation_padding_right">5dp</dimen>
+    <dimen name="logo_annotation_padding_top">5dp</dimen>
+    <dimen name="logo_annotation_text_size">25sp</dimen>
+    <dimen name="min_offset_between_dates_width">40dp</dimen>
+    <dimen name="panel_padding_bottom">3dp</dimen>
+    <dimen name="panel_padding_left">0dp</dimen>
+    <dimen name="panel_padding_right">0dp</dimen>
+    <dimen name="panel_padding_top">3dp</dimen>
+    <dimen name="panels_rect_line_width">1dp</dimen>
+    <dimen name="splitter_line_width">2dp</dimen>
+    <dimen name="splitter_touched_line_width">2dp</dimen>
+    <dimen name="text_annotation_padding_bottom">3dp</dimen>
+    <dimen name="text_annotation_padding_left">5dp</dimen>
+    <dimen name="text_annotation_padding_right">5dp</dimen>
+    <dimen name="text_annotation_padding_top">3dp</dimen>
+    <dimen name="title_text_size">12sp</dimen>
+    <dimen name="value_marker_border_line_width">1dp</dimen>
+    <dimen name="value_marker_grid_line">1.5dp</dimen>
+    <dimen name="value_marker_line_width">1dp</dimen>
+    <dimen name="value_marker_margin">1dp</dimen>
+    <dimen name="value_marker_padding_bottom">2dp</dimen>
+    <dimen name="value_marker_padding_left">4dp</dimen>
+    <dimen name="value_marker_padding_right">3dp</dimen>
+    <dimen name="value_marker_padding_top">2dp</dimen>
+    <dimen name="value_marker_text_size">10sp</dimen>
+    <dimen name="y_scale_automatic_offset">20dp</dimen>
+    <dimen name="y_scale_padding_bottom">6dp</dimen>
+    <dimen name="y_scale_padding_left">4dp</dimen>
+    <dimen name="y_scale_padding_right">4dp</dimen>
+    <dimen name="y_scale_padding_top">6dp</dimen>
+    <dimen name="y_scale_text_size">10sp</dimen>
+    <dimen name="y_scale_value_line_length">2dp</dimen>
+    <string name="app_name">Trading Chart Designer V1.0</string>
+    <string name="drawing_text_input_message"> Input your text</string>
+    <string name="drawing_text_positive_button"> Set text</string>
+    <string name="logo_text">Fintatech</string>
+    <style name="TCDTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="chart_fill_color">@color/chart_fill_color_dark</item>
+        <item name="y_scale_fill_color">@color/y_scale_fill_color_dark</item>
+        <item name="y_scale_text_color">@color/y_scale_text_color_dark</item>
+
+        <item name="logo_annotation_text_color">@color/logo_annotation_text_color_dark</item>
+
+        <item name="instrument_logo_annotation_text_color">@color/instrument_logo_annotation_text_color_dark</item>
+
+        <item name="date_scale_fill_color">@color/date_scale_fill_color_dark</item>
+        <item name="date_scale_line_color">@color/date_scale_line_color_dark</item>
+        <item name="date_scale_text_color">@color/date_scale_text_color_dark</item>
+
+        <item name="grid_line_color">@color/grid_line_color_dark</item>
+
+        <item name="panels_rect_line_color">@color/panels_rect_line_color_dark</item>
+
+        <item name="splitter_line_color">@color/splitter_line_color_dark</item>
+        <item name="splitter_touched_line_color">@color/splitter_touched_line_color_dark</item>
+
+        <item name="value_marker_border_line_color">@color/value_marker_border_line_color_dark</item>
+        <item name="value_marker_fill_color">@color/value_marker_fill_color_dark</item>
+        <item name="value_marker_text_color">@color/value_marker_text_color_dark</item>
+
+        <item name="indicator_up_marker_text_color">@color/indicator_up_marker_text_color_dark</item>
+        <item name="indicator_middle_marker_text_color">@color/indicator_middle_marker_text_color_dark</item>
+        <item name="indicator_down_marker_text_color">@color/indicator_down_marker_text_color_dark</item>
+
+        <item name="crosshair_color">@color/crosshair_color_dark</item>
+        <item name="crosshair_marker_color">@color/crosshair_marker_color_dark</item>
+        <item name="crosshair_text_color">@color/crosshair_text_color_dark</item>
+        <item name="crosshair_marker_text_color">@color/crosshair_marker_text_color_dark</item>
+
+        <item name="bar_up_color">@color/bar_up_color_dark</item>
+        <item name="bar_down_color">@color/bar_down_color_dark</item>
+
+        <item name="title_color">@color/title_color_dark</item>
+        <item name="indicator_top_line">@color/indicator_top_line_dark</item>
+
+        <item name="indicator_simple_moving_average_line">@color/indicator_simple_moving_average_line_dark</item>
+        <item name="indicator_exponential_moving_average_line">@color/indicator_exponential_moving_average_line_dark</item>
+        <item name="indicator_weighted_moving_average_line">@color/indicator_weighted_moving_average_line_dark</item>
+        <item name="indicator_welles_wilder_smoothing_line">@color/indicator_welles_wilder_smoothing_line_dark</item>
+
+        <item name="indicator_commodity_channel_index_line">@color/indicator_commodity_channel_index_line_dark</item>
+
+        <item name="indicator_macd_line">@color/indicator_macd_line_dark</item>
+        <item name="indicator_macd">@color/indicator_macd_dark</item>
+        <item name="indicator_macd_signal_line">@color/indicator_macd_signal_line_dark</item>
+        <item name="indicator_macd_signal">@color/indicator_macd_signal_dark</item>
+
+        <item name="indicator_momentum_oscillator_line">@color/indicator_momentum_oscillator_line_dark</item>
+
+        //todo rename colors
+        <item name="indicator_relative_strength_index_line">@color/indicator_relative_strength_index_line_dark</item>
+        <item name="indicator_relative_strength_main_start">@color/indicator_relative_strength_main_start_dark</item>
+        <item name="indicator_relative_strength_main_end">@color/indicator_relative_strength_main_end_dark</item>
+        <item name="indicator_relative_strength_middle_line">@color/indicator_relative_strength_middle_line_dark</item>
+        <item name="indicator_relative_strength_overbought_line">@color/indicator_relative_strength_overbought_line_dark</item>
+        <item name="indicator_relative_strength_overbought_start">@color/indicator_relative_strength_overbought_start_dark</item>
+        <item name="indicator_relative_strength_overbought_end">@color/indicator_relative_strength_overbought_end_dark</item>
+        <item name="indicator_relative_strength_oversold_line">@color/indicator_relative_strength_oversold_line_dark</item>
+        <item name="indicator_relative_strength_oversold_start">@color/indicator_relative_strength_oversold_start_dark</item>
+        <item name="indicator_relative_strength_oversold_end">@color/indicator_relative_strength_oversold_end_dark</item>
+
+        <item name="indicator_stochastic_oscillator_d_line">@color/indicator_stochastic_oscillator_d_line_dark</item>
+        <item name="indicator_stochastic_oscillator_k_line">@color/indicator_stochastic_oscillator_k_line_dark</item>
+
+        <item name="indicator_bollinger_bands_top_line">@color/indicator_bollinger_bands_top_line_dark</item>
+        <item name="indicator_bollinger_bands_median_line">@color/indicator_bollinger_bands_median_line_dark</item>
+        <item name="indicator_bollinger_bands_bottom_line">@color/indicator_bollinger_bands_bottom_line_dark</item>
+
+        <item name="indicator_fractal_chaos_bands_high_line">@color/indicator_fractal_chaos_bands_high_line_dark</item>
+        <item name="indicator_fractal_chaos_bands_low_line">@color/indicator_fractal_chaos_bands_low_line_dark</item>
+        <item name="indicator_directional_movement_system_top_line">@color/indicator_directional_movement_system_top_line_dark</item>
+        <item name="indicator_directional_movement_system_median_line">@color/indicator_directional_movement_system_median_line_dark</item>
+        <item name="indicator_directional_movement_system_bottom_line">@color/indicator_directional_movement_system_bottom_line_dark</item>
+
+        <item name="indicator_elder_force_index_indicator_line">@color/indicator_elder_force_index_indicator_line_dark</item>
+        <item name="indicator_elder_force_index_signal_line">@color/indicator_elder_force_index_signal_line_dark</item>
+
+        <item name="indicator_ichimoku_cloud_tenkansen_line">@color/indicator_ichimoku_cloud_tenkansen_line_dark</item>
+        <item name="indicator_ichimoku_cloud_kijun_sen_line">@color/indicator_ichimoku_cloud_kijun_sen_line_dark</item>
+        <item name="indicator_ichimoku_cloud_chikou_span_line">@color/indicator_ichimoku_cloud_chikou_span_line_dark</item>
+        <item name="indicator_ichimoku_cloud_senkou_span_a_line">@color/indicator_ichimoku_cloud_senkou_span_a_line_dark</item>
+        <item name="indicator_ichimoku_cloud_senkou_span_b_line">@color/indicator_ichimoku_cloud_senkou_span_b_line_dark</item>
+
+        <item name="indicator_ichimoku_base_fill_color">@color/indicator_ichimoku_base_fill_color_dark</item>
+        <item name="indicator_ichimoku_inverted_fill_color">@color/indicator_ichimoku_inverted_fill_color_dark</item>
+
+        <item name="indicator_macd_histogram_line">@color/indicator_macd_histogram_line_dark</item>
+        <item name="indicator_macd_histogram_color">@color/indicator_macd_histogram_color_dark</item>
+        <item name="indicator_macd_d_line">@color/indicator_macd_d_line_dark</item>
+        <item name="indicator_macd_k_line">@color/indicator_macd_k_line_dark</item>
+
+        <item name="indicator_stochastic_momentum_index_d_line">@color/indicator_stochastic_momentum_index_d_line_dark</item>
+        <item name="indicator_stochastic_momentum_index_k_line">@color/indicator_stochastic_momentum_index_k_line_dark</item>
+
+        <item name="indicator_intraday_momentum_index_line">@color/indicator_intraday_momentum_index_line_dark</item>
+
+        <item name="indicator_williams_prc_r_line">@color/indicator_williams_prc_r_line_dark</item>
+
+        <item name="indicator_aroon_oscilator_line">@color/indicator_aroon_oscilator_line_dark</item>
+
+        <item name="indicator_aroon_top_line">@color/indicator_aroon_top_line_dark</item>
+        <item name="indicator_aroon_bottom_line">@color/indicator_aroon_bottom_line_dark</item>
+
+        <item name="indicator_atr_line">@color/indicator_atr_line_dark</item>
+
+        <item name="indicator_standard_deviation_line">@color/indicator_standard_deviation_line_dark</item>
+
+        <item name="indicator_coppock_curve_line">@color/indicator_coppock_curve_line_dark</item>
+
+        <item name="indicator_qstick_line">@color/indicator_qstick_line_dark</item>
+        <item name="indicator_detrended_price_oscillator_line">@color/indicator_detrended_price_oscillator_line_dark</item>
+        <item name="indicator_parabolic_sar_line">@color/indicator_parabolic_sar_line_dark</item>
+        <item name="indicator_parabolic_sar_shape">@color/indicator_parabolic_sar_shape_dark</item>
+        <item name="indicator_williams_accumulation_distribution_line">@color/indicator_williams_accumulation_distribution_line_dark</item>
+        <item name="indicator_volume_oscillator_line">@color/indicator_volume_oscillator_line_dark</item>
+        <item name="indicator_klinger_volume_oscillator_line">@color/indicator_klinger_volume_oscillator_line_dark</item>
+        <item name="indicator_volume_roc_line">@color/indicator_volume_roc_line_dark</item>
+
+        <item name="indicator_moving_average_envelope_top_line">@color/indicator_moving_average_envelope_top_line_dark</item>
+        <item name="indicator_moving_average_envelope_median_line">@color/indicator_moving_average_envelope_median_line_dark</item>
+        <item name="indicator_moving_average_envelope_bottom_line">@color/indicator_moving_average_envelope_bottom_line_dark</item>
+
+        <item name="indicator_linear_regression_forecast_line">@color/indicator_linear_regression_forecast_line_dark</item>
+        <item name="indicator_linear_regression_intercept_line">@color/indicator_linear_regression_intercept_line_dark</item>
+
+        <item name="drawing_andrews_pitch_fork_line">@color/drawing_andrews_pitch_fork_line_dark</item>
+        <item name="drawing_circle_border_line">@color/drawing_circle_border_line_dark</item>
+        <item name="drawing_circle_fill">@color/drawing_circle_fill_dark</item>
+        <item name="drawing_ellipse_border_line">@color/drawing_ellipse_border_line_dark</item>
+        <item name="drawing_ellipse_fill">@color/drawing_ellipse_fill_dark</item>
+
+        <item name="drawing_fibonacci_circle_radius_line">@color/drawing_fibonacci_circle_radius_line_dark</item>
+        <item name="drawing_fibonacci_first_line">@color/drawing_fibonacci_first_line_dark</item>
+        <item name="drawing_fibonacci_second_line">@color/drawing_fibonacci_second_line_dark</item>
+        <item name="drawing_fibonacci_third_line">@color/drawing_fibonacci_third_line_dark</item>
+        <item name="drawing_fibonacci_fourth_line">@color/drawing_fibonacci_fourth_line_dark</item>
+        <item name="drawing_fibonacci_fifth_line">@color/drawing_fibonacci_fifth_line_dark</item>
+        <item name="drawing_fibonacci_sixth_line">@color/drawing_fibonacci_sixth_line_dark</item>
+        <item name="drawing_fibonacci_seventh_line">@color/drawing_fibonacci_seventh_line_dark</item>
+        <item name="drawing_fibonacci_extension_border">@color/drawing_fibonacci_extension_border_dark</item>
+        <item name="drawing_fibonacci_retracements_diagonal">@color/drawing_fibonacci_retracements_diagonal_dark</item>
+
+        <item name="drawing_text_color">@color/title_color_dark</item>
+        <item name="drawing_line">@color/drawing_line_dark</item>
+        <item name="drawing_rectangle_fill">@color/drawing_rectangle_fill_dark</item>
+        <item name="drawing_rectangle_border">@color/drawing_rectangle_border_dark</item>
+        <item name="drawing_trend_channel_line">@color/drawing_trend_channel_line_dark</item>
+        <item name="drawing_triangle_border">@color/drawing_triangle_border_dark</item>
+        <item name="drawing_triangle_fill">@color/drawing_triangle_fill_dark</item>
+        <item name="drawing_shapes_fill">@color/drawing_shapes_fill_dark</item>
+
+        <item name="drawing_selection_marker_fill">@color/drawing_selection_marker_fill_dark</item>
+        <item name="drawing_selection_marker_border">@color/drawing_selection_marker_border_dark</item>
+    </style>
+    <style name="TCDTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="chart_fill_color">@color/chart_fill_color_light</item>
+        <item name="y_scale_fill_color">@color/y_scale_fill_color_light</item>
+        <item name="y_scale_text_color">@color/y_scale_text_color_light</item>
+
+        <item name="logo_annotation_text_color">@color/logo_annotation_text_color_light</item>
+
+        <item name="instrument_logo_annotation_text_color">@color/instrument_logo_annotation_text_color_light</item>
+
+        <item name="date_scale_fill_color">@color/date_scale_fill_color_light</item>
+        <item name="date_scale_line_color">@color/date_scale_line_color_light</item>
+        <item name="date_scale_text_color">@color/date_scale_text_color_light</item>
+
+        <item name="grid_line_color">@color/grid_line_color_light</item>
+
+        <item name="panels_rect_line_color">@color/panels_rect_line_color_light</item>
+
+        <item name="splitter_line_color">@color/splitter_line_color_light</item>
+        <item name="splitter_touched_line_color">@color/splitter_touched_line_color_light</item>
+
+        <item name="value_marker_border_line_color">@color/value_marker_border_line_color_light</item>
+        <item name="value_marker_fill_color">@color/value_marker_fill_color_light</item>
+        <item name="value_marker_text_color">@color/value_marker_text_color_light</item>
+
+
+        <item name="indicator_up_marker_text_color">@color/indicator_up_marker_text_color_light</item>
+        <item name="indicator_middle_marker_text_color">@color/indicator_middle_marker_text_color_light</item>
+        <item name="indicator_down_marker_text_color">@color/indicator_down_marker_text_color_light</item>
+
+        <item name="crosshair_color">@color/crosshair_color_light</item>
+        <item name="crosshair_marker_color">@color/crosshair_marker_color_light</item>
+        <item name="crosshair_text_color">@color/crosshair_text_color_light</item>
+        <item name="crosshair_marker_text_color">@color/crosshair_marker_text_color_light</item>
+
+        <item name="controls_color">@color/controls_color_light</item>
+
+        <item name="bar_up_color">@color/bar_up_color_light</item>
+        <item name="bar_down_color">@color/bar_down_color_light</item>
+
+        <item name="title_color">@color/title_color_light</item>
+        <item name="indicator_top_line">@color/indicator_top_line_light</item>
+
+        <item name="indicator_simple_moving_average_line">@color/indicator_simple_moving_average_line_light</item>
+        <item name="indicator_exponential_moving_average_line">@color/indicator_exponential_moving_average_line_light</item>
+        <item name="indicator_weighted_moving_average_line">@color/indicator_weighted_moving_average_line_light</item>
+        <item name="indicator_welles_wilder_smoothing_line">@color/indicator_welles_wilder_smoothing_line_light</item>
+
+        <item name="indicator_commodity_channel_index_line">@color/indicator_commodity_channel_index_line_light</item>
+
+        <item name="indicator_macd_line">@color/indicator_macd_line_light</item>
+        <item name="indicator_macd">@color/indicator_macd_light</item>
+        <item name="indicator_macd_signal_line">@color/indicator_macd_signal_line_light</item>
+        <item name="indicator_macd_signal">@color/indicator_macd_signal_light</item>
+
+        <item name="indicator_momentum_oscillator_line">@color/indicator_momentum_oscillator_line_light</item>
+
+        <item name="indicator_relative_strength_index_line">@color/indicator_relative_strength_index_line_light</item>
+        <item name="indicator_relative_strength_main_start">@color/indicator_relative_strength_main_start_light</item>
+        <item name="indicator_relative_strength_main_end">@color/indicator_relative_strength_main_end_light</item>
+        <item name="indicator_relative_strength_middle_line">@color/indicator_relative_strength_middle_line_light</item>
+        <item name="indicator_relative_strength_overbought_line">@color/indicator_relative_strength_overbought_line_light</item>
+        <item name="indicator_relative_strength_overbought_start">@color/indicator_relative_strength_overbought_start_light</item>
+        <item name="indicator_relative_strength_overbought_end">@color/indicator_relative_strength_overbought_end_light</item>
+        <item name="indicator_relative_strength_oversold_line">@color/indicator_relative_strength_oversold_line_light</item>
+        <item name="indicator_relative_strength_oversold_start">@color/indicator_relative_strength_oversold_start_light</item>
+        <item name="indicator_relative_strength_oversold_end">@color/indicator_relative_strength_oversold_end_light</item>
+
+        <item name="indicator_stochastic_oscillator_d_line">@color/indicator_stochastic_oscillator_d_line_light</item>
+        <item name="indicator_stochastic_oscillator_k_line">@color/indicator_stochastic_oscillator_k_line_light</item>
+
+        <item name="indicator_bollinger_bands_top_line">@color/indicator_bollinger_bands_top_line_light</item>
+        <item name="indicator_bollinger_bands_median_line">@color/indicator_bollinger_bands_median_line_light</item>
+        <item name="indicator_bollinger_bands_bottom_line">@color/indicator_bollinger_bands_bottom_line_light</item>
+
+        <item name="indicator_fractal_chaos_bands_high_line">@color/indicator_fractal_chaos_bands_high_line_light</item>
+        <item name="indicator_fractal_chaos_bands_low_line">@color/indicator_fractal_chaos_bands_low_line_light</item>
+        <item name="indicator_directional_movement_system_top_line">@color/indicator_directional_movement_system_top_line_light</item>
+        <item name="indicator_directional_movement_system_median_line">@color/indicator_directional_movement_system_median_line_light</item>
+        <item name="indicator_directional_movement_system_bottom_line">@color/indicator_directional_movement_system_bottom_line_light</item>
+
+        <item name="indicator_elder_force_index_indicator_line">@color/indicator_elder_force_index_indicator_line_light</item>
+        <item name="indicator_elder_force_index_signal_line">@color/indicator_elder_force_index_signal_line_light</item>
+
+        <item name="indicator_ichimoku_cloud_tenkansen_line">@color/indicator_ichimoku_cloud_tenkansen_line_light</item>
+        <item name="indicator_ichimoku_cloud_kijun_sen_line">@color/indicator_ichimoku_cloud_kijun_sen_line_light</item>
+        <item name="indicator_ichimoku_cloud_chikou_span_line">@color/indicator_ichimoku_cloud_chikou_span_line_light</item>
+        <item name="indicator_ichimoku_cloud_senkou_span_a_line">@color/indicator_ichimoku_cloud_senkou_span_a_line_light</item>
+        <item name="indicator_ichimoku_cloud_senkou_span_b_line">@color/indicator_ichimoku_cloud_senkou_span_b_line_light</item>
+
+        <item name="indicator_ichimoku_base_fill_color">@color/indicator_ichimoku_base_fill_color_light</item>
+        <item name="indicator_ichimoku_inverted_fill_color">@color/indicator_ichimoku_inverted_fill_color_light</item>
+
+        <item name="indicator_macd_histogram_line">@color/indicator_macd_histogram_line_light</item>
+        <item name="indicator_macd_histogram_color">@color/indicator_macd_histogram_color_light</item>
+        <item name="indicator_macd_d_line">@color/indicator_macd_d_line_light</item>
+        <item name="indicator_macd_k_line">@color/indicator_macd_k_line_light</item>
+
+        <item name="indicator_stochastic_momentum_index_d_line">@color/indicator_stochastic_momentum_index_d_line_light</item>
+        <item name="indicator_stochastic_momentum_index_k_line">@color/indicator_stochastic_momentum_index_k_line_light</item>
+
+        <item name="indicator_intraday_momentum_index_line">@color/indicator_intraday_momentum_index_line_light</item>
+
+        <item name="indicator_williams_prc_r_line">@color/indicator_williams_prc_r_line_light</item>
+
+        <item name="indicator_aroon_oscilator_line">@color/indicator_aroon_oscilator_line_light</item>
+
+        <item name="indicator_aroon_top_line">@color/indicator_aroon_top_line_light</item>
+        <item name="indicator_aroon_bottom_line">@color/indicator_aroon_bottom_line_light</item>
+
+        <item name="indicator_atr_line">@color/indicator_atr_line_light</item>
+
+        <item name="indicator_standard_deviation_line">@color/indicator_standard_deviation_line_light</item>
+
+        <item name="indicator_coppock_curve_line">@color/indicator_coppock_curve_line_light</item>
+
+        <item name="indicator_qstick_line">@color/indicator_qstick_line_light</item>
+        <item name="indicator_detrended_price_oscillator_line">@color/indicator_detrended_price_oscillator_line_light</item>
+        <item name="indicator_parabolic_sar_line">@color/indicator_parabolic_sar_line_light</item>
+        <item name="indicator_parabolic_sar_shape">@color/indicator_parabolic_sar_shape_light</item>
+        <item name="indicator_williams_accumulation_distribution_line">@color/indicator_williams_accumulation_distribution_line_light</item>
+        <item name="indicator_volume_oscillator_line">@color/indicator_volume_oscillator_line_light</item>
+        <item name="indicator_klinger_volume_oscillator_line">@color/indicator_klinger_volume_oscillator_line_light</item>
+        <item name="indicator_volume_roc_line">@color/indicator_volume_roc_line_light</item>
+
+        <item name="indicator_moving_average_envelope_top_line">@color/indicator_moving_average_envelope_top_line_light</item>
+        <item name="indicator_moving_average_envelope_median_line">@color/indicator_moving_average_envelope_median_line_light</item>
+        <item name="indicator_moving_average_envelope_bottom_line">@color/indicator_moving_average_envelope_bottom_line_light</item>
+
+        <item name="indicator_linear_regression_forecast_line">@color/indicator_linear_regression_forecast_line_light</item>
+        <item name="indicator_linear_regression_intercept_line">@color/indicator_linear_regression_intercept_line_light</item>
+
+        <item name="drawing_andrews_pitch_fork_line">@color/drawing_andrews_pitch_fork_line_light</item>
+        <item name="drawing_circle_border_line">@color/drawing_circle_border_line_light</item>
+        <item name="drawing_circle_fill">@color/drawing_circle_fill_light</item>
+        <item name="drawing_ellipse_border_line">@color/drawing_ellipse_border_line_light</item>
+        <item name="drawing_ellipse_fill">@color/drawing_ellipse_fill_light</item>
+
+        <item name="drawing_fibonacci_circle_radius_line">@color/drawing_fibonacci_circle_radius_line_light</item>
+        <item name="drawing_fibonacci_first_line">@color/drawing_fibonacci_first_line_light</item>
+        <item name="drawing_fibonacci_second_line">@color/drawing_fibonacci_second_line_light</item>
+        <item name="drawing_fibonacci_third_line">@color/drawing_fibonacci_third_line_light</item>
+        <item name="drawing_fibonacci_fourth_line">@color/drawing_fibonacci_fourth_line_light</item>
+        <item name="drawing_fibonacci_fifth_line">@color/drawing_fibonacci_fifth_line_light</item>
+        <item name="drawing_fibonacci_sixth_line">@color/drawing_fibonacci_sixth_line_light</item>
+        <item name="drawing_fibonacci_seventh_line">@color/drawing_fibonacci_seventh_line_light</item>
+        <item name="drawing_fibonacci_extension_border">@color/drawing_fibonacci_extension_border_light</item>
+        <item name="drawing_fibonacci_retracements_diagonal">@color/drawing_fibonacci_retracements_diagonal_light</item>
+
+        <item name="drawing_text_color">@color/title_color_light</item>
+        <item name="drawing_line">@color/drawing_line_light</item>
+        <item name="drawing_rectangle_fill">@color/drawing_rectangle_fill_light</item>
+        <item name="drawing_rectangle_border">@color/drawing_rectangle_border_light</item>
+        <item name="drawing_trend_channel_line">@color/drawing_trend_channel_line_light</item>
+        <item name="drawing_triangle_border">@color/drawing_triangle_border_light</item>
+        <item name="drawing_triangle_fill">@color/drawing_triangle_fill_light</item>
+        <item name="drawing_shapes_fill">@color/drawing_shapes_fill_light</item>
+
+        <item name="drawing_selection_marker_fill">@color/drawing_selection_marker_fill_light</item>
+        <item name="drawing_selection_marker_border">@color/drawing_selection_marker_border_light</item>
+    </style>
+    <declare-styleable name="TradingChartDesignerView">
+        <attr format="color" name="chart_fill_color"/>
+
+        <attr format="color" name="y_scale_fill_color"/>
+        <attr format="color" name="y_scale_text_color"/>
+
+        <attr format="color" name="date_scale_fill_color"/>
+        <attr format="color" name="date_scale_line_color"/>
+        <attr format="color" name="date_scale_text_color"/>
+
+        <attr format="color" name="grid_line_color"/>
+
+        <attr format="color" name="panels_rect_line_color"/>
+
+        <attr format="color" name="splitter_line_color"/>
+        <attr format="color" name="splitter_touched_line_color"/>
+
+        <attr format="color" name="value_marker_border_line_color"/>
+        <attr format="color" name="value_marker_fill_color"/>
+        <attr format="color" name="value_marker_text_color"/>
+
+        <attr format="color" name="indicator_up_marker_text_color"/>
+        <attr format="color" name="indicator_middle_marker_text_color"/>
+        <attr format="color" name="indicator_down_marker_text_color"/>
+
+        <attr format="color" name="crosshair_color"/>
+        <attr format="color" name="crosshair_marker_color"/>
+        <attr format="color" name="crosshair_text_color"/>
+        <attr format="color" name="crosshair_marker_text_color"/>
+
+        <attr format="color" name="controls_color"/>
+
+        <attr format="color" name="bar_up_color"/>
+        <attr format="color" name="bar_down_color"/>
+
+        <attr format="color" name="title_color"/>
+        <attr format="color" name="indicator_top_line"/>
+
+        <attr format="color" name="indicator_simple_moving_average_line"/>
+        <attr format="color" name="indicator_exponential_moving_average_line"/>
+        <attr format="color" name="indicator_weighted_moving_average_line"/>
+        <attr format="color" name="indicator_welles_wilder_smoothing_line"/>
+
+        <attr format="color" name="indicator_commodity_channel_index_line"/>
+
+        <attr format="color" name="indicator_macd_line"/>
+        <attr format="color" name="indicator_macd"/>
+        <attr format="color" name="indicator_macd_signal_line"/>
+        <attr format="color" name="indicator_macd_signal"/>
+
+        <attr format="color" name="indicator_momentum_oscillator_line"/>
+
+        <attr format="color" name="indicator_relative_strength_index_line"/>
+        <attr format="color" name="indicator_relative_strength_main_start"/>
+        <attr format="color" name="indicator_relative_strength_main_end"/>
+        <attr format="color" name="indicator_relative_strength_middle_line"/>
+        <attr format="color" name="indicator_relative_strength_overbought_line"/>
+        <attr format="color" name="indicator_relative_strength_overbought_start"/>
+        <attr format="color" name="indicator_relative_strength_overbought_end"/>
+        <attr format="color" name="indicator_relative_strength_oversold_line"/>
+        <attr format="color" name="indicator_relative_strength_oversold_start"/>
+        <attr format="color" name="indicator_relative_strength_oversold_end"/>
+
+        <attr format="color" name="indicator_stochastic_oscillator_d_line"/>
+        <attr format="color" name="indicator_stochastic_oscillator_k_line"/>
+
+        <attr format="color" name="indicator_bollinger_bands_top_line"/>
+        <attr format="color" name="indicator_bollinger_bands_median_line"/>
+        <attr format="color" name="indicator_bollinger_bands_bottom_line"/>
+
+        <attr format="color" name="indicator_fractal_chaos_bands_high_line"/>
+        <attr format="color" name="indicator_fractal_chaos_bands_low_line"/>
+
+        <attr format="color" name="indicator_directional_movement_system_top_line"/>
+        <attr format="color" name="indicator_directional_movement_system_median_line"/>
+        <attr format="color" name="indicator_directional_movement_system_bottom_line"/>
+
+        <attr format="color" name="indicator_elder_force_index_indicator_line"/>
+        <attr format="color" name="indicator_elder_force_index_signal_line"/>
+
+        <attr format="color" name="indicator_ichimoku_cloud_tenkansen_line"/>
+        <attr format="color" name="indicator_ichimoku_cloud_kijun_sen_line"/>
+        <attr format="color" name="indicator_ichimoku_cloud_chikou_span_line"/>
+        <attr format="color" name="indicator_ichimoku_cloud_senkou_span_a_line"/>
+        <attr format="color" name="indicator_ichimoku_cloud_senkou_span_b_line"/>
+
+        <attr format="color" name="indicator_ichimoku_base_fill_color"/>
+        <attr format="color" name="indicator_ichimoku_inverted_fill_color"/>
+
+        <attr format="color" name="indicator_macd_histogram_line"/>
+        <attr format="color" name="indicator_macd_histogram_color"/>
+        <attr format="color" name="indicator_macd_d_line"/>
+        <attr format="color" name="indicator_macd_k_line"/>
+
+        <attr format="color" name="indicator_stochastic_momentum_index_d_line"/>
+        <attr format="color" name="indicator_stochastic_momentum_index_k_line"/>
+
+        <attr format="color" name="indicator_intraday_momentum_index_line"/>
+
+        <attr format="color" name="indicator_williams_prc_r_line"/>
+
+        <attr format="color" name="indicator_aroon_oscilator_line"/>
+
+        <attr format="color" name="indicator_aroon_top_line"/>
+        <attr format="color" name="indicator_aroon_bottom_line"/>
+
+        <attr format="color" name="indicator_atr_line"/>
+
+        <attr format="color" name="indicator_standard_deviation_line"/>
+
+        <attr format="color" name="indicator_coppock_curve_line"/>
+
+        <attr format="color" name="indicator_qstick_line"/>
+        <attr format="color" name="indicator_detrended_price_oscillator_line"/>
+        <attr format="color" name="indicator_parabolic_sar_line"/>
+        <attr format="color" name="indicator_parabolic_sar_shape"/>
+        <attr format="color" name="indicator_williams_accumulation_distribution_line"/>
+        <attr format="color" name="indicator_volume_oscillator_line"/>
+        <attr format="color" name="indicator_klinger_volume_oscillator_line"/>
+        <attr format="color" name="indicator_volume_roc_line"/>
+
+        <attr format="color" name="indicator_moving_average_envelope_top_line"/>
+        <attr format="color" name="indicator_moving_average_envelope_median_line"/>
+        <attr format="color" name="indicator_moving_average_envelope_bottom_line"/>
+
+        <attr format="color" name="indicator_linear_regression_forecast_line"/>
+        <attr format="color" name="indicator_linear_regression_intercept_line"/>
+
+        <attr format="color" name="drawing_andrews_pitch_fork_line"/>
+        <attr format="color" name="drawing_circle_border_line"/>
+        <attr format="color" name="drawing_circle_fill"/>
+        <attr format="color" name="drawing_ellipse_border_line"/>
+        <attr format="color" name="drawing_ellipse_fill"/>
+
+        <attr format="color" name="drawing_fibonacci_circle_radius_line"/>
+        <attr format="color" name="drawing_fibonacci_first_line"/>
+        <attr format="color" name="drawing_fibonacci_second_line"/>
+        <attr format="color" name="drawing_fibonacci_third_line"/>
+        <attr format="color" name="drawing_fibonacci_fourth_line"/>
+        <attr format="color" name="drawing_fibonacci_fifth_line"/>
+        <attr format="color" name="drawing_fibonacci_sixth_line"/>
+        <attr format="color" name="drawing_fibonacci_seventh_line"/>
+        <attr format="color" name="drawing_fibonacci_extension_border"/>
+        <attr format="color" name="drawing_fibonacci_retracements_diagonal"/>
+
+        <attr format="color" name="drawing_line"/>
+        <attr format="color" name="drawing_rectangle_fill"/>
+        <attr format="color" name="drawing_rectangle_border"/>
+        <attr format="color" name="drawing_trend_channel_line"/>
+        <attr format="color" name="drawing_triangle_border"/>
+        <attr format="color" name="drawing_triangle_fill"/>
+
+        <attr format="color" name="drawing_shapes_fill"/>
+
+        <attr format="color" name="drawing_selection_marker_fill"/>
+        <attr format="color" name="drawing_selection_marker_border"/>
+
+        <attr format="color" name="logo_annotation_text_color"/>
+        <attr format="color" name="drawing_text_color"/>
+
+        <attr format="color" name="instrument_logo_annotation_text_color"/>
+
+    </declare-styleable>
+</resources>

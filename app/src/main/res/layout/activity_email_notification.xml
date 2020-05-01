@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.Settings.NotificationSettings.EmailNotificationActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar"/>
+
+    <Switch
+        android:id="@+id/switch_promo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="12sp"
+        android:theme="@style/SwitchTheme"
+        android:textColor="@color/color_text_white"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/appbar"
+        android:layout_marginBottom="2dp"
+        android:background="?attr/colorWhiteTransparent"
+        android:text="@string/promo"/>
+
+   <!-- <Switch
+        android:id="@+id/switch_tournament"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorWhiteTransparent"
+        android:layout_below="@+id/switch_promo"
+        android:text="@string/tournaments"
+        android:textSize="12sp"
+        android:theme="@style/SwitchTheme"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="2dp"
+        android:padding="15dp"
+        android:textColor="@color/color_text_white" />
+-->
+    <Switch
+        android:id="@+id/switch_system_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:theme="@style/SwitchTheme"
+        android:layout_marginBottom="2dp"
+        android:textSize="12sp"
+        android:textColor="@color/color_text_white"
+        android:background="?attr/colorWhiteTransparent"
+        android:layout_below="@+id/switch_promo"
+        android:text="@string/system_news" />
+
+    <Switch
+        android:id="@+id/switch_analytical_rpts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorWhiteTransparent"
+        android:layout_below="@+id/switch_system_news"
+        android:text="@string/analytical_reports"
+        android:padding="15dp"
+        android:theme="@style/SwitchTheme"
+        android:layout_marginStart="5dp"
+        android:textSize="12sp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/color_text_white" />
+
+</RelativeLayout>

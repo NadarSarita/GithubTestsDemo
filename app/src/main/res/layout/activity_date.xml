@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.History.Operation.DateActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:padding="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:id="@+id/RG_Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite">
+
+                <RadioButton
+                    android:id="@+id/RB_alltime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorWhite"
+                    android:text="All time"
+                    android:padding="15dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/colorWhiteTrans"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorWhite" />
+
+                <RadioButton
+                    android:id="@+id/RB_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorWhite"
+                    android:text="Today"
+                    android:padding="15dp"
+                    android:layout_marginBottom="1dp"
+                    android:textSize="12sp"
+                    android:background="@color/colorWhiteTrans"
+                    android:textColor="@color/colorWhite" />
+
+                <RadioButton
+                    android:id="@+id/RB_day1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorWhite"
+                    android:text="Yesterday"
+                    android:padding="15dp"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/colorWhiteTrans"
+                    android:textColor="@color/colorWhite" />
+
+                <RadioButton
+                    android:id="@+id/RB_day2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorWhite"
+                    android:text="Last 7 days"
+                    android:padding="15dp"
+                    android:layout_marginBottom="1dp"
+                    android:textSize="12sp"
+                    android:background="@color/colorWhiteTrans"
+                    android:textColor="@color/colorWhite" />
+
+                <RadioButton
+                    android:id="@+id/RB_day3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorWhite"
+                    android:text="1 month"
+                    android:padding="15dp"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/colorWhiteTrans"
+                    android:textColor="@color/colorWhite" />
+
+
+                <RadioButton
+                    android:id="@+id/RB_day4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorWhite"
+                    android:text="3 Months"
+                    android:padding="15dp"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/colorWhiteTrans"
+                    android:textColor="@color/colorWhite" />
+                <RadioButton
+                    android:id="@+id/RB_Custom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorWhite"
+                    android:text="Custom"
+                    android:textSize="12sp"
+                    android:padding="15dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/colorWhiteTrans"
+                    android:textColor="@color/colorWhite" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/LL_CustomDate"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/RG_Date"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:padding="15dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/from_date_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From :"
+                        android:textStyle="bold"
+                        android:id="@+id/txt_from_date"
+                        android:textColor="@color/colorWhite"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14/06/2017"
+                        android:id="@+id/display_from_date"
+                        android:background="@drawable/bg_border_white"
+                        android:textColor="@color/color_text_white"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="12sp"
+                        android:layout_marginStart="5dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/to_date_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="To :"
+                        android:textStyle="bold"
+                        android:id="@+id/txt_to_date"
+                        android:textColor="@color/colorWhite"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14/06/2017"
+                        android:id="@+id/display_to_date"
+                        android:background="@drawable/bg_border_white"
+                        android:textColor="@color/color_text_white"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="12sp"
+                        android:layout_marginStart="5dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

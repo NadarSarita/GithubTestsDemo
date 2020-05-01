@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "325465749539",
+    "firebase_url": "https://idnbin.firebaseio.com",
+    "project_id": "idnbin",
+    "storage_bucket": "idnbin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325465749539:android:65eccaacf1b53f6d231996",
+        "android_client_info": {
+          "package_name": "com.app.idnbin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325465749539-mummn7ga8tnlap5mjndv6mi9k9jrqkml.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.idnbin",
+            "certificate_hash": "2646b416f00a4cb831e1d6e683a5d11922a90bb3"
+          }
+        },
+        {
+          "client_id": "325465749539-ntj2uabhnfjks72k6nb4c0bmf7ktk3kf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.idnbin",
+            "certificate_hash": "909e9f1bbbc67a27d2fb2e990ab110810c957bea"
+          }
+        },
+        {
+          "client_id": "325465749539-eqnr1annmlirp94sufdln8pvn2mit06h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.idnbin",
+            "certificate_hash": "65a6675debeb0c8d8b5b6b7113caa19b74d8f3bf"
+          }
+        },
+        {
+          "client_id": "325465749539-va87efl8art08v8kr90s78lvl4vkhin2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.idnbin",
+            "certificate_hash": "1e9bb97c47f1f36a3069b8818c7e88497d40c3a1"
+          }
+        },
+        {
+          "client_id": "325465749539-l8ck8aifsv8ukk46en46uqk6gem9d2eq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.idnbin",
+            "certificate_hash": "5462d386e0f66f6a0eda3d21312c7cf29a04cab0"
+          }
+        },
+        {
+          "client_id": "325465749539-dm3874jveog8qkeln8sbvdgri7jgqvja.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.idnbin",
+            "certificate_hash": "1bbba9a654fde3bd0d51594c99daf45769b973e7"
+          }
+        },
+        {
+          "client_id": "325465749539-s8adrl9pm45ps7eevgkh3lp5g3cqdl14.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.idnbin",
+            "certificate_hash": "ede3dd12473829e82f15d721a7404d7085be249d"
+          }
+        },
+        {
+          "client_id": "325465749539-b33v4gbdi2ann0rkkq09dpj2soadaou2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.idnbin",
+            "certificate_hash": "9e5546198b66fab4c79da02ea55e0bf8a8cef90c"
+          }
+        },
+        {
+          "client_id": "325465749539-jole8n2e9r4cc9fi5li27moocnkhs5u8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.idnbin",
+            "certificate_hash": "d73ba2235d753536ae280e638bb64cf16cdc10eb"
+          }
+        },
+        {
+          "client_id": "325465749539-bnjfpskq028e07pqkrc7034crgnq41vc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.idnbin",
+            "certificate_hash": "0aa0c138d5e2f7b2a78a88f29eb1bbd70bbb5e02"
+          }
+        },
+        {
+          "client_id": "325465749539-00eadcp3h6ijn3djnnnd6drd71n2gm4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCebWKv--_cxf6Poro6EQVzPAeRmh0GbRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325465749539-kjg4ooh90lnkk6ad7f5q3dte0lndlgqd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "325465749539-0bbjlabst5mm99jceu1qrv30a2rn4g7o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.idnbin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:id="@+id/RlAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@color/colorWhiteTrans"
+            android:id="@+id/TvInvest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textColor="@color/colorLightGray"
+            android:text="INVEST"/>
+
+        <TextView
+            android:id="@+id/TV_closed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp"
+            android:background="@drawable/ic_close" />
+
+        <TextView
+            android:id="@+id/TvAllBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="4dp"
+            android:textSize="10sp"
+            android:layout_below="@+id/TvInvest"
+            android:textColor="@color/colorLightGray"
+            android:text="ALL BALANCE"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="40dp"
+            android:layout_below="@+id/TvAllBalance"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:text="$0.00"/>
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/EtValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="80dp"
+        android:hint="Min $1"
+        android:text="1"
+        android:inputType="number"
+        android:padding="6dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColorHint="@color/color_text_white"
+        android:background="@color/colorWhiteTrans"
+        android:layout_toLeftOf="@+id/RvPresets"
+        android:textColor="@color/color_text_white"
+        android:layout_toRightOf="@+id/TvCurrency"
+        android:layout_below="@+id/RlAppBar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RvPresets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RlAppBar"
+        android:layout_above="@+id/View"
+        android:layout_alignParentEnd="true"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:background="@color/colorWhiteTrans"
+        android:layout_marginEnd="30dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/LlFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="58dp"
+        android:orientation="vertical"
+        android:background="#1DFFFFFF"
+        android:layout_toLeftOf="@+id/RvPresets"
+        android:layout_below="@+id/EtValue">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@color/colorLightGray"
+            android:text="COEFFICIENT"/>
+
+        <EditText
+            android:id="@+id/EtCoefficient"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="2"
+            android:textSize="12sp"
+            android:inputType="number"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LlSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_toLeftOf="@+id/RvPresets"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="54dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/LlFirst">
+
+        <Button
+            android:id="@+id/BtnMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="x"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"
+            android:background="#1DFFFFFF"/>
+
+        <Button
+            android:id="@+id/BtnDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="%"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="4dp"
+            android:background="#1DFFFFFF"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BtnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="58dp"
+        android:text="Confirm"
+        android:textSize="10sp"
+        android:textColor="@color/color_tab_highlight"
+        android:background="@drawable/bg_rounded_transparent"
+        android:layout_toLeftOf="@+id/RvPresets"
+        android:layout_below="@+id/LlSecond"/>
+
+    <View
+        android:id="@+id/View"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@+id/BtnConfirm"/>
+
+</RelativeLayout>

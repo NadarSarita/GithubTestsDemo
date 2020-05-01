@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_50"
+        android:title="x50"/>
+
+    <item
+        android:id="@+id/item_100"
+        android:title="x100"/>
+
+    <item
+        android:id="@+id/item_200"
+        android:title="x200"/>
+    <item
+        android:id="@+id/item_300"
+        android:title="x300"/>
+
+    <item
+        android:id="@+id/item_500"
+        android:title="x500"/>
+</menu>

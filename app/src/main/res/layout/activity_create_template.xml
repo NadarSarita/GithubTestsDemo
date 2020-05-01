@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Indicator.CreateTemplateActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:textSize="12sp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:textColor="@color/color_text_grey"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_above="@+id/btn_Save"
+        android:layout_below="@+id/appbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/RL_template"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_tempName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:padding="10dp"
+                    android:hint="Name of template"
+                    android:textSize="12sp"
+                    android:textColorHint="@color/color_text_grey"
+                    android:background="@drawable/bg_button_transparent"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/TV_Line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lines"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/et_tempName"
+                    android:textColor="@color/colorWhite" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TV_Line"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardBackgroundColor="?attr/colorWhiteTransparent">
+
+
+                    <RelativeLayout
+                        android:id="@+id/RLLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_below="@+id/TV_Line"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/TV_cardnumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text=" Vertical Line"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+
+                            android:textColor="@color/colorWhite" />
+
+                        <TextView
+                            android:id="@+id/TV_cardname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/TV_cardnumber"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="3dp"
+                            android:text="Merck"
+                            android:textSize="10sp"
+                            android:textColor="@color/color_text_grey" />
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:id="@+id/HSChart"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="end"
+                        android:layout_below="@id/TV_GT"
+
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="3dp"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_remove_red_eye_black_24dp" />
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="3dp"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_settings_black_24dp" />
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="3dp"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_delete_black_24dp" />
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_linetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_view"
+                    android:layout_margin="10dp"
+                    android:textSize="12sp"
+
+                    android:text="Lines can be applied only to the current asset because they rely on the price of the asset "
+                    android:textColor="@color/color_text_white"/>
+
+                <Switch
+                    android:id="@+id/switch_chartsettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Chart settings"
+                    android:textSize="12sp"
+
+                    android:layout_below="@+id/tv_linetext"
+                    android:theme="@style/SwitchTheme"
+                    android:padding="10dp"
+                    android:background="?attr/colorWhiteTransparent"
+                    android:textColor="@color/color_text_white"/>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/RLchartsettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RL_template"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/RL_ChartType"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:background="?attr/colorWhiteTransparent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_text_grey"
+                        android:textSize="12sp"
+
+                        android:text="Chart type"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="12sp"
+
+                        android:textColor="@color/color_text_white"
+                        android:text="Area"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RL_CandleSize"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:background="?attr/colorWhiteTransparent"
+                    android:layout_below="@+id/RL_ChartType"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+
+                        android:textColor="@color/color_text_grey"
+                        android:text="Candle size"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="12sp"
+
+                        android:textColor="@color/color_text_white"
+                        android:text="1s"/>
+                </RelativeLayout>
+
+
+                <Switch
+                    android:id="@+id/Switch_Helkin_ashi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="?attr/colorWhiteTransparent"
+                    android:padding="10dp"
+                    android:text="Heikin-ashi"
+                    android:textSize="12sp"
+
+                    android:layout_below="@+id/RL_CandleSize"
+                    android:textColor="@color/color_text_grey"
+                    android:theme="@style/SwitchTheme" />
+                <Switch
+                    android:id="@+id/Switch_Autoscaling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="?attr/colorWhiteTransparent"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+
+                    android:text="Auto-scaling"
+
+                    android:layout_below="@+id/Switch_Helkin_ashi"
+                    android:textColor="@color/color_text_grey"
+                    android:theme="@style/SwitchTheme" />
+                <Switch
+                    android:id="@+id/Switch_TraderSentiments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_below="@+id/Switch_Autoscaling"
+                    android:background="?attr/colorWhiteTransparent"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+
+                    android:text="Trader's Sentiment"
+                    android:textColor="@color/color_text_grey"
+                    android:theme="@style/SwitchTheme" />
+                <Switch
+                    android:id="@+id/Switch_LiveDeals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_below="@+id/Switch_TraderSentiments"
+                    android:background="?attr/colorWhiteTransparent"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+
+                    android:text="Live deals"
+                    android:textColor="@color/color_text_grey"
+                    android:theme="@style/SwitchTheme" />
+                <Switch
+                    android:id="@+id/Switch_Volume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_below="@+id/Switch_LiveDeals"
+                    android:background="?attr/colorWhiteTransparent"
+                    android:padding="10dp"
+                    android:text="Volume"
+                    android:textSize="12sp"
+
+                    android:textColor="@color/color_text_grey"
+                    android:theme="@style/SwitchTheme" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_Save"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Save"
+        android:layout_margin="10dp"
+        android:textColor="@color/color_text_white"
+        android:background="@drawable/bg_button_transparent"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

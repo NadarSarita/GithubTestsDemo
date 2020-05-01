@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.Deposit.WebMoneyWmeActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar" />
+
+    <TextView
+        android:id="@+id/TvAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER AMOUNT"
+        android:textSize="12sp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/appbar"
+        android:textColor="@color/color_text_white" />
+
+    <LinearLayout
+        android:id="@+id/RlAmount"
+        android:background="@color/color_text_white"
+        android:layout_below="@+id/TvAmt"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ETAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="500"
+            android:inputType="number"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/color_text_white"
+            android:textColor="@color/colorBackground"/>
+
+        <Spinner
+            android:id="@+id/SpAmount_WebMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:popupBackground="@color/colorBackground"/>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RlAmount">
+
+        <RelativeLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/TvAmt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="250 P"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_rounded_transparent"
+                android:textColor="@color/color_text_white"/>
+
+            <TextView
+                android:id="@+id/TvAmt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500 P"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_rounded_transparent"
+                android:layout_toEndOf="@+id/TvAmt1"
+                android:textColor="@color/color_text_white"/>
+
+            <TextView
+                android:id="@+id/TvAmt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500 P"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_rounded_transparent"
+                android:layout_toEndOf="@+id/TvAmt2"
+                android:textColor="@color/color_text_white"/>
+
+            <TextView
+                android:id="@+id/TvAmt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500 P"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_rounded_transparent"
+                android:layout_toEndOf="@+id/TvAmt3"
+                android:textColor="@color/color_text_white"/>
+
+            <TextView
+                android:id="@+id/TvAmt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500 P"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_rounded_transparent"
+                android:layout_toEndOf="@+id/TvAmt4"
+                android:textColor="@color/color_text_white"/>
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/TvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:text="You will be redirected to payment gate to process payment"
+        android:textColor="@color/color_text_white" />
+
+    <Button
+        android:id="@+id/btn_webMoney_Deposit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="DEPOSIT $ 500.00"
+        android:textColor="@color/color_text_white"
+        android:background="@drawable/bg_button_buy"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

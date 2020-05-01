@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/TvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:text="PURCHASE PRICE"
+        android:background="@color/colorWhiteTrans"
+        android:textColor="@color/colorLightGray"/>
+
+    <TextView
+        android:id="@+id/TV_icclosed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/ic_close" />
+
+    <EditText
+        android:id="@+id/EtAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:padding="10dp"
+        android:hint="0.85466"
+        android:textSize="10sp"
+        android:textColorHint="@color/color_text_white"
+        android:cursorVisible="false"
+        android:background="@drawable/bg_border_white"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/TvTitle"/>
+
+    <TextView
+        android:id="@+id/TvMarket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:text="MARKET"
+        android:textSize="10sp"
+        android:textColor="@color/colorLightGray"
+        android:layout_below="@+id/EtAmount"/>
+
+    <Button
+        android:id="@+id/BtnPriceDown"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="28dp"
+        android:text="-"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorWhiteTrans"
+        android:layout_below="@+id/TvMarket"/>
+
+    <Button
+        android:id="@+id/BtnPriceUp"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:text="+"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:background="@color/colorWhiteTrans"
+        android:layout_below="@+id/TvMarket"/>
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:background="@drawable/ic_cancel"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/TvMarket"/>
+
+
+
+    <Button
+        android:id="@+id/BtnCfm"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="58dp"
+        android:text="Confirm"
+        android:layout_marginTop="20dp"
+        android:textSize="10sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/color_tab_highlight"
+        android:background="@drawable/bg_rounded_transparent"
+        android:layout_toLeftOf="@+id/RvPresets"
+        android:layout_below="@+id/BtnPriceDown"/>
+
+</RelativeLayout>

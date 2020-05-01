@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.Deposit.LocalPaymentActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar" />
+
+    <LinearLayout
+        android:id="@+id/LL_PaymentGateway"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/appbar">
+
+        <TextView
+            android:id="@+id/Tv_BankName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Bank Name"
+            android:textColor="@color/color_text_grey"
+            android:textSize="10sp"/>
+
+        <EditText
+            android:id="@+id/Et_BankName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/bg_rounded_transparent"
+            android:inputType="text"
+            android:maxLength="15"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/Tv_AccountName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Account Name"
+            android:textColor="@color/color_text_grey"
+            android:textSize="10sp"/>
+
+        <EditText
+            android:id="@+id/Et_AccountName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/bg_rounded_transparent"
+            android:inputType="text"
+            android:maxLength="15"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/Tv_AccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Account Number"
+            android:textColor="@color/color_text_grey"
+            android:textSize="10sp"/>
+
+        <EditText
+            android:id="@+id/Et_AccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/bg_rounded_transparent"
+            android:inputType="number"
+            android:maxLength="15"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/Tv_AccountType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Account Type"
+            android:textColor="@color/color_text_grey"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/Et_AccountType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/bg_rounded_transparent"
+            android:inputType="text"
+            android:maxLength="15"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/Tv_Country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Country"
+            android:textColor="@color/color_text_grey"
+            android:textSize="10sp"/>
+
+        <EditText
+            android:id="@+id/Et_Country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/bg_rounded_transparent"
+            android:inputType="text"
+            android:maxLength="15"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/Tv_DepositeAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Deposit Amount"
+            android:textColor="@color/color_text_grey"
+            android:textSize="10sp"/>
+
+        <EditText
+            android:id="@+id/Et_DepositAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/bg_rounded_transparent"
+            android:inputType="number"
+            android:maxLength="15"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_deposit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_button_buy"
+        android:text="DEPOSIT"
+        android:textColor="@color/color_text_white" />
+
+</RelativeLayout>

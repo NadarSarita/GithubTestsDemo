@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground">
+
+<TextView
+    android:id="@+id/TV_GT"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorLightGray"
+    android:text="TEMPLATES"
+    android:textSize="12sp"
+
+    android:layout_margin="10dp" />
+
+
+    <TextView
+        android:id="@+id/TV_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You have no templates"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        android:textSize="10sp"
+
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorLightGray"
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/TV_saveTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" CREATE TEMPLATE"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/TV_text"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textSize="10sp"
+
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_add_circle_black_24dp"
+        android:textColor="@color/colorGradGreen"
+        />
+
+
+</RelativeLayout>

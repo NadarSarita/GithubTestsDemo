@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_Multiplierone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:padding="5dp"
+        android:text="X50"
+        android:textColor="@color/color_text_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_Multipliertwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_Multiplierone"
+        android:layout_marginStart="10dp"
+        android:padding="5dp"
+        android:text="X100"
+        android:textColor="@color/color_text_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_Multiplierthree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_Multipliertwo"
+        android:layout_marginStart="10dp"
+        android:padding="5dp"
+        android:text="X200"
+        android:textColor="@color/color_text_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_Multiplierfour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Multiplierthree"
+        android:layout_marginStart="10dp"
+        android:padding="5dp"
+        android:text="X300"
+        android:textColor="@color/color_text_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_Multiplierfive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Multiplierfour"
+        android:layout_marginStart="10dp"
+        android:padding="5dp"
+        android:text="X500"
+        android:textColor="@color/color_text_white"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

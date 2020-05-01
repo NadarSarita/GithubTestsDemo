@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_marginTop="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TvDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:text="Mon"
+            android:textColor="@color/colorLightGray" />
+
+        <TextView
+            android:id="@+id/TvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="03:32"
+            android:textSize="10sp"
+            android:textColor="@color/colorLightGray"/>
+
+        <TextView
+            android:id="@+id/TvSell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-0.0204%"
+            android:textSize="10sp"
+            android:textColor="@color/colorLightGray"/>
+
+        <TextView
+            android:id="@+id/TvBuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-0.029%"
+            android:textSize="10sp"
+            android:textColor="@color/colorLightGray"/>
+
+</LinearLayout>

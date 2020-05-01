@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/TvApply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="APPLY"
+                android:textColor="@color/color_tab_highlight"
+                android:textAlignment="textEnd"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/TvGeneral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TvApply"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="10dp"
+                android:text="General"
+                android:textColor="@color/color_text_grey" />
+
+            <LinearLayout
+                android:id="@+id/LLInstrumentType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TvGeneral"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:background="@color/colorWhiteTrans"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/TvInstrumentType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Instrument Type"
+                    android:textColor="@color/color_text_white" />
+
+                <TextView
+                    android:id="@+id/TvOperationValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="All Instruments"
+                    android:textColor="@color/color_text_grey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LLInstrumentType"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="60dp"
+                android:background="@color/colorWhiteTrans"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/TvBalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Balance"
+                    android:textColor="@color/color_text_white" />
+
+                <TextView
+                    android:id="@+id/TvBalanceValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Real"
+                    android:textColor="@color/color_text_grey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLAsset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LLBalance"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="60dp"
+                android:background="@color/colorWhiteTrans"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Asset"
+                    android:textColor="@color/color_text_white" />
+
+                <TextView
+                    android:id="@+id/TvAssetValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="All Assets"
+                    android:textColor="@color/color_text_grey" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/TvPeriod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LLAsset"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="10dp"
+                android:text="Period"
+                android:textColor="@color/color_text_grey" />
+
+            <LinearLayout
+                android:id="@+id/LLDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TvPeriod"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:background="@color/colorWhiteTrans"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/TvDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TvPeriod"
+                    android:text="Date"
+                    android:textColor="@color/color_text_white" />
+
+                <TextView
+                    android:id="@+id/TvDateValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TvDate"
+                    android:text="All Time"
+                    android:textColor="@color/color_text_grey" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

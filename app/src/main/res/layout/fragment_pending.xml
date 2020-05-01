@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Portfolio.Pending.PendingFragment"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_transparent"
+        android:layout_marginEnd="5dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/IVLogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_english_chat" />
+
+        <TextView
+            android:id="@+id/tv_st"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/IVLogo"
+            android:text="CAD / JYP"
+            android:textColor="@color/color_text_white"
+            android:layout_marginStart="6dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_cncy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="800000"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/color_text_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_dgl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_st"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/IVLogo"
+            android:text="Forex"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/color_text_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="$80 x 100"
+            android:layout_below="@+id/tv_cncy"
+            android:textColor="@color/color_text_grey"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_porfolio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dgl"
+            android:layout_toEndOf="@+id/IVLogo"
+            android:layout_marginStart="6dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_PurchaseTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CREATED"
+                android:textColor="@color/color_text_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_ExpirationTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_PurchaseTime"
+                android:text="INVEST"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/color_text_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_Level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_ExpirationTime"
+                android:text="LEVER"
+                android:textColor="@color/color_text_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_Direction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_Level"
+                android:text="CURR PRICE"
+                android:textColor="@color/color_text_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_PurchaseTime_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="11:28"
+                android:textColor="@color/color_text_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_ExpirationTime_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_PurchaseTime_value"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="8dp"
+                android:text="$80"
+                android:textColor="@color/color_text_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_Level_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_ExpirationTime_value"
+                android:layout_alignParentEnd="true"
+                android:text="x100"
+                android:textColor="@color/color_text_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_Direction_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_Level_value"
+                android:layout_alignParentEnd="true"
+                android:text="75.16330"
+                android:textColor="@color/color_text_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANCEL"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_below="@+id/tv_Direction_value"
+                android:background="@drawable/bg_rounded_transparent"
+                android:textColor="@color/color_text_white"
+                android:layout_marginEnd="5dp"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

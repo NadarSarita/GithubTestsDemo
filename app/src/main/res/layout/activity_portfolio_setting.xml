@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Portfolio.Open.PortfolioSettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/layout_appbar" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/bg_border_white"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_profit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="When Profit is"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_profit"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="Not set"
+                android:text="+"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:entries="@array/protfolio_setting"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/bg_border_white"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_loss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="When Loss is"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_loss"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="Not set"
+                android:text="-"
+                android:textColor="@color/colorWhite" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:entries="@array/protfolio_setting"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="1dp"
+            android:textColor="@color/colorWhite">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorWhite"
+                android:text="Trailing Shop"
+                android:textColor="@color/colorWhite" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorWhite"
+                android:text="Use Balance to Keep Position Open"
+                android:textColor="@color/colorWhite" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/Btn_apply"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_button_buy"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Apply"
+            android:textColor="@color/colorWhite" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl2"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="1dp"
+            android:background="?attr/colorWhiteTransparent"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/tv_CommissionPaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Commission Paid"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_PurchaseTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_CommissionPaid"
+                android:layout_marginBottom="5dp"
+                android:text="Purchase time"
+                android:textColor="@color/colorLightGray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_ExpirationTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_PurchaseTime"
+                android:layout_marginBottom="5dp"
+                android:text="ExpirationTime"
+                android:textColor="@color/colorLightGray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_Level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_ExpirationTime"
+                android:layout_marginBottom="5dp"
+                android:text="Level"
+                android:textColor="@color/colorLightGray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_Direction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_Level"
+                android:layout_marginBottom="5dp"
+                android:text="Direction"
+                android:textColor="@color/colorLightGray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_Investment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_Direction"
+                android:layout_marginBottom="5dp"
+                android:text="Investment"
+                android:textColor="@color/colorLightGray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_Multiplier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_Investment"
+                android:layout_marginBottom="5dp"
+                android:text="Multiplier"
+                android:textColor="@color/colorLightGray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_CommissionPaid_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+
+                android:text="-$0.285"
+                android:textColor="@color/colorSell"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/tv_PurchaseTime_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_CommissionPaid_value"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:text="5 Mar 13:38:43"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_ExpirationTime_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_PurchaseTime_value"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:text="5 Mar 22:00:00"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_Level_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_ExpirationTime_value"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:text="9119.25"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_Direction_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_Level_value"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:text="Buy"
+                android:textColor="@color/colorGradGreen"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_Investment_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_Direction_value"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:text="$1,000.00"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_Multiplier_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_Investment_value"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:text="*100"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="1dp"
+            android:background="?attr/colorWhiteTransparent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_Loss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Loss"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_Percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_Loss"
+                android:layout_marginBottom="5dp"
+                android:text="%"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/tv_loss_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:text="-$0.285"
+                android:textColor="@color/colorSell"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/tv_Percent_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_loss_value"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:text="5 Mar 13:38:43"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/Btn_Next"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/bg_grey_rounded"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Close Position"
+                android:textColor="@color/colorWhite" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

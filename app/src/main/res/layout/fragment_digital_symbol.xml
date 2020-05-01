@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Assets.Digital.DigitalSymbolFragment">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/SearchView"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        app:queryHint="Search here"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:theme="@android:style/Theme.Holo"
+        app:iconifiedByDefault="true" />
+
+    <LinearLayout
+        android:id="@+id/LL_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/SearchView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="ICON"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/Tv_Asset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_arrow_drop_down"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="ASSET"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/Tv_Hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_arrow_drop_down"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="HOUR"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/Tv_Profit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_arrow_drop_down"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="PROFIT"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:textColor="@color/colorLightGray" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Rv_Digital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LL_Header" />
+
+</RelativeLayout>

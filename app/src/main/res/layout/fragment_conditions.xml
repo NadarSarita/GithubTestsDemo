@@ -1,0 +1,353 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorWhiteTransparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_INVEST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MIN INVEST"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_SPRED"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="SPRED"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/tv_INVEST"
+            app:layout_constraintTop_toBottomOf="@id/tv_INVEST" />
+
+        <TextView
+            android:id="@+id/tv_TIME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_LEVERAGE"
+            android:layout_marginTop="8dp"
+            android:text="EXP.TIME"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/tv_LEVERAGE"
+            app:layout_constraintTop_toBottomOf="@id/tv_LEVERAGE" />
+
+        <TextView
+            android:id="@+id/tv_LEVERAGE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_SPRED"
+            android:layout_marginTop="8dp"
+            android:text="LEVERAGE"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/tv_SPRED"
+            app:layout_constraintTop_toBottomOf="@id/tv_SPRED" />
+
+        <TextView
+            android:id="@+id/tv_COMMISSION"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_TIME"
+            android:layout_marginTop="8dp"
+            android:text="COMMISSION"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/tv_TIME"
+            app:layout_constraintTop_toBottomOf="@id/tv_TIME" />
+
+        <TextView
+            android:id="@+id/tv_INVEST_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="-$0.285"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_INVEST"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_SPRED_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_INVEST_value"
+            android:layout_alignParentEnd="true"
+            android:text="0.0000%"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_SPRED"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_LEVERAGE_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_SPRED_value"
+            android:layout_alignParentEnd="true"
+            android:text="up to x20"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_LEVERAGE"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_ExpirationTime_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_LEVERAGE_value"
+            android:layout_alignParentEnd="true"
+            android:text=" - "
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_TIME"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_COMMISSION_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ExpirationTime_value"
+            android:layout_alignParentEnd="true"
+            android:text="Free"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_COMMISSION"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <TextView
+            android:id="@+id/TvOverFunding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_COMMISSION"
+            android:layout_marginTop="16dp"
+            android:text="OVERNIGHT FUNDING"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/tv_COMMISSION"
+            app:layout_constraintTop_toBottomOf="@id/tv_COMMISSION" />
+
+
+        <TextView
+            android:id="@+id/TvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_COMMISSION_value"
+            android:layout_alignParentEnd="true"
+            android:text="TODAY"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/TvOverFunding"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/TvBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvOverFunding"
+            android:layout_marginTop="4dp"
+            android:text="BUY"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/TvOverFunding"
+            app:layout_constraintTop_toBottomOf="@id/TvOverFunding" />
+
+        <TextView
+            android:id="@+id/TvBuyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvDay"
+            android:layout_alignParentEnd="true"
+            android:text="-0.264%"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/TvBuy"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/TvSell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvBuy"
+            android:layout_marginTop="4dp"
+            android:text="SELL"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/TvBuy"
+            app:layout_constraintTop_toBottomOf="@id/TvBuy" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvBuyValue"
+            android:layout_alignParentEnd="true"
+            android:text="-0.0204%"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/TvSell"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <View
+            android:id="@+id/View"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/TvSell"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorLightGray"
+            app:layout_constraintTop_toBottomOf="@id/TvSell" />
+
+        <TextView
+            android:id="@+id/TvSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/View"
+            android:layout_marginTop="16dp"
+            android:text="SCHEDULE"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/View" />
+
+        <TextView
+            android:id="@+id/TvTimezone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/View"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/TvSchedule"
+            android:text="(GMT+05:30)"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/TvSchedule"
+            app:layout_constraintStart_toEndOf="@id/TvSchedule" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RvSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvSchedule"
+            android:layout_marginTop="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/TvSchedule"
+            tools:listitem="@layout/layout_schedule_list" />
+
+        <View
+            android:id="@+id/View2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/RvSchedule"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorLightGray"
+            app:layout_constraintTop_toBottomOf="@id/RvSchedule" />
+
+        <TextView
+            android:id="@+id/TvOvernightFunding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/View2"
+            android:layout_marginTop="16dp"
+            android:text="OVERNIGHT FUNDING"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/View2" />
+
+        <LinearLayout
+            android:id="@+id/LlOvernightFunding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvOvernightFunding"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/TvOvernightFunding">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DATE"
+                android:textColor="@color/colorLightGray"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TIME"
+                android:textAlignment="center"
+                android:textColor="@color/colorLightGray"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SELL"
+                android:textAlignment="center"
+                android:textColor="@color/colorLightGray"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BUY"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorLightGray"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RvOvernightFunding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LlOvernightFunding"
+            android:layout_marginTop="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/LlOvernightFunding"
+            tools:listitem="@layout/layout_overnight_funding_list" />
+
+        <TextView
+            android:id="@+id/TvOvernightFundingDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RvOvernightFunding"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintTop_toBottomOf="@id/RvOvernightFunding" />
+
+        <TextView
+            android:id="@+id/TvPositiveOvernightFundingDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorLightGray"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TvOvernightFundingDesc" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupOvernightFunding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="TvPositiveOvernightFundingDesc,TvOvernightFunding,RvOvernightFunding,TvOvernightFundingDesc,LlOvernightFunding,View2,TvDay,textView5,TvOverFunding,TvBuy,TvSell,TvBuyValue" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.History.Trading.InstrumentTypeActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/appbar"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/RL_Operation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp">
+
+            <CheckBox
+                android:id="@+id/allCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Instruments"
+                android:textSize="12sp"
+                android:padding="15dp"
+                android:textAlignment="viewEnd"
+                android:onClick="onCheckBoxClick"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhiteTrans"
+                android:buttonTint="@color/colorBuy"
+                android:textColor="@color/color_text_white"
+                />
+
+            <CheckBox
+                android:id="@+id/OptionsCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Options"
+                android:textSize="12sp"
+                android:padding="15dp"
+                android:textAlignment="viewEnd"
+                android:onClick="onCheckBoxClick"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhiteTrans"
+                android:buttonTint="@color/colorBuy"
+                android:layout_below="@+id/allCheckBox"
+                android:textColor="@color/color_text_white"
+                />
+
+            <CheckBox
+                android:id="@+id/forexCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forex"
+                android:textSize="12sp"
+                android:textAlignment="viewEnd"
+                android:padding="15dp"
+                android:onClick="onCheckBoxClick"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhiteTrans"
+                android:buttonTint="@color/colorBuy"
+                android:layout_below="@+id/OptionsCheckBox"
+                android:textColor="@color/color_text_white"
+                />
+
+            <CheckBox
+                android:id="@+id/stocksCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stocks"
+                android:textSize="12sp"
+                android:textAlignment="viewEnd"
+                android:padding="15dp"
+                android:onClick="onCheckBoxClick"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhiteTrans"
+                android:buttonTint="@color/colorBuy"
+                android:layout_below="@+id/forexCheckBox"
+                android:textColor="@color/color_text_white"
+                />
+
+            <CheckBox
+                android:id="@+id/cryptoCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crypto"
+                android:textSize="12sp"
+                android:padding="15dp"
+                android:textAlignment="viewEnd"
+                android:onClick="onCheckBoxClick"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhiteTrans"
+                android:buttonTint="@color/colorBuy"
+                android:layout_below="@+id/stocksCheckBox"
+                android:textColor="@color/color_text_white"
+                />
+            <CheckBox
+                android:id="@+id/commoditiesCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Commodities"
+                android:textSize="12sp"
+                android:padding="15dp"
+                android:textAlignment="viewEnd"
+                android:onClick="onCheckBoxClick"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhiteTrans"
+                android:buttonTint="@color/colorBuy"
+                android:layout_below="@+id/cryptoCheckBox"
+                android:textColor="@color/color_text_white"
+                />
+
+            <CheckBox
+                android:id="@+id/etfCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ETFs"
+                android:textSize="12sp"
+                android:textAlignment="viewEnd"
+                android:padding="15dp"
+                android:onClick="onCheckBoxClick"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhiteTrans"
+                android:buttonTint="@color/colorBuy"
+                android:layout_below="@+id/commoditiesCheckBox"
+                android:textColor="@color/color_text_white"
+                />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

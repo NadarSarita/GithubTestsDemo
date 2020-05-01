@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.Settings.NotificationSettings.PushNotificationActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_acc_ativity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:padding="10dp"
+                android:text="@string/acc_activity"
+                android:textColor="@color/colorLightGray"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rl_closed_trade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_acc_ativity"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="?attr/colorWhiteTransparent"
+                android:padding="10dp">
+
+                <Switch
+                    android:id="@+id/switch_closed_trade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/closed_trade"
+                    android:theme="@style/SwitchTheme"
+                    android:textColor="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/tv_receive_rst_trade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/switch_closed_trade"
+                    android:text="@string/receive_rst"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_succ_withdraw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_closed_trade"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="?attr/colorWhiteTransparent"
+                android:padding="10dp">
+
+                <Switch
+                    android:id="@+id/switch_succ_withdraw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/succ_withdraw"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"
+                    android:theme="@style/SwitchTheme" />
+
+                <TextView
+                    android:id="@+id/tv_rqt_approve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/switch_succ_withdraw"
+                    android:text="@string/request_approved"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_pending_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_succ_withdraw"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="?attr/colorWhiteTransparent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_rec_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/switch_pending_order"
+                    android:text="@string/rec_notification"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp" />
+
+                <Switch
+                    android:id="@+id/switch_pending_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:theme="@style/SwitchTheme"
+                    android:text="@string/pending_orders"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_margin_trdng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_pending_order"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="?attr/colorWhiteTransparent"
+                android:padding="10dp">
+
+                <Switch
+                    android:id="@+id/switch_margin_trdng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:theme="@style/SwitchTheme"
+                    android:text="@string/margin_trading"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_margin_trdng_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/switch_margin_trdng"
+                    android:text="@string/margin_trading"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_market_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_margin_trdng"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:padding="10dp"
+                android:text="@string/market_data"
+                android:textColor="@color/colorLightGray"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rl_market_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_market_data"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="?attr/colorWhiteTransparent"
+                android:padding="10dp">
+
+                <Switch
+                    android:id="@+id/switch_market_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:theme="@style/SwitchTheme"
+                    android:text="@string/market_news"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_latest_trdng_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/switch_market_news"
+                    android:text="@string/latest_trading_news"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_price_movements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_market_news"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:padding="10dp"
+                android:text="@string/prise_mnt"
+                android:textColor="@color/colorLightGray"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rl_sharp_jump"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_price_movements"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="?attr/colorWhiteTransparent"
+                android:padding="10dp">
+
+                <Switch
+                    android:id="@+id/switch_sharp_jump"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:theme="@style/SwitchTheme"
+                    android:text="@string/sharp_jump"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_rapid_asset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/switch_sharp_jump"
+                    android:text="@string/rapid_access"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_open_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_sharp_jump"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/open_position"
+                android:padding="10dp"
+                android:textColor="@color/colorLightGray"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rl_rise_fall_notify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_open_position"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="?attr/colorWhiteTransparent"
+                android:padding="10dp">
+
+                <Switch
+                    android:id="@+id/switch_rise_fall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:theme="@style/SwitchTheme"
+                    android:text="@string/rise_fall"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_rise_fall_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/switch_rise_fall"
+                    android:text="@string/rise_fall_next_level"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_chats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_rise_fall_notify"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/chat"
+                android:padding="10dp"
+                android:textColor="@color/colorLightGray"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rl_support"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_chats"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="?attr/colorWhiteTransparent"
+                android:padding="10dp">
+
+                <Switch
+                    android:id="@+id/switch_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:theme="@style/SwitchTheme"
+                    android:text="@string/Support"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_support_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/switch_support"
+                    android:text="@string/support_chat"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_alerts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_support"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/alert"
+                android:padding="10dp"
+                android:textColor="@color/colorLightGray"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rl_price_alerts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_alerts"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="?attr/colorWhiteTransparent"
+                android:padding="10dp">
+
+                <Switch
+                    android:id="@+id/switch_price_alerts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:theme="@style/SwitchTheme"
+                    android:text="@string/prise_alert"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_receive_price_alerts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/switch_price_alerts"
+                    android:text="@string/receive_prise_alert"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

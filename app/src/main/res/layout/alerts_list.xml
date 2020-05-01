@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorWhiteTransparent"
+    android:padding="5dp"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:layout_editor_absoluteX="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/CivSymbol"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/eurusd" />
+
+    <TextView
+        android:id="@+id/tv_st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/CivSymbol"
+        android:text="EUR/USD"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_dgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_st"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toEndOf="@+id/CivSymbol"
+        android:text="Digital"
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_cncy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="$1.087870"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_prnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_cncy"
+        android:layout_alignParentEnd="true"
+        android:text="26 Feb ,15:56"
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>

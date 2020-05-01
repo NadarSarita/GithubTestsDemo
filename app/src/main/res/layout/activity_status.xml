@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.History.Operation.StatusActivity">
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/layout_appbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar">
+        <RelativeLayout
+            android:id="@+id/RL_Operation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp">
+
+            <CheckBox
+                android:id="@+id/allCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:textSize="12sp"
+                android:textAlignment="viewEnd"
+                android:padding="15dp"
+                android:onClick="onCheckBoxClick"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhiteTrans"
+                android:buttonTint="@color/colorBuy"
+                android:textColor="@color/color_text_white" />
+
+            <CheckBox
+                android:id="@+id/depositCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Completed"
+                android:textSize="12sp"
+                android:textAlignment="viewEnd"
+                android:padding="15dp"
+                android:onClick="onCheckBoxClick"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhiteTrans"
+                android:buttonTint="@color/colorBuy"
+                android:layout_below="@+id/allCheckBox"
+                android:textColor="@color/color_text_white"
+                />
+
+            <CheckBox
+                android:id="@+id/withdrawalCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In Process"
+                android:textAlignment="viewEnd"
+                android:textSize="12sp"
+                android:padding="15dp"
+                android:onClick="onCheckBoxClick"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhiteTrans"
+                android:buttonTint="@color/colorBuy"
+                android:layout_below="@+id/depositCheckBox"
+                android:textColor="@color/color_text_white"
+                />
+
+            <CheckBox
+                android:id="@+id/trebuyCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Canceled"
+                android:textSize="12sp"
+                android:padding="15dp"
+                android:textAlignment="viewEnd"
+                android:onClick="onCheckBoxClick"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhiteTrans"
+                android:buttonTint="@color/colorBuy"
+                android:layout_below="@+id/withdrawalCheckBox"
+                android:textColor="@color/color_text_white"
+                />
+
+            <CheckBox
+                android:id="@+id/trewardCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Failed"
+                android:textSize="12sp"
+                android:padding="15dp"
+                android:textAlignment="viewEnd"
+                android:onClick="onCheckBoxClick"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhiteTrans"
+                android:buttonTint="@color/colorBuy"
+                android:layout_below="@+id/trebuyCheckBox"
+                android:textColor="@color/color_text_white"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
